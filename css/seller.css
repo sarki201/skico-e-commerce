@@ -1,0 +1,44 @@
+i {
+    font-size: 25px;
+}
+
+li {
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar {
+    flex-basis: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upper {
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    font-size: 10px;
+    background-color: white;
+    padding: 3.5px;
+    border-radius: 10px;
+}
+
+.seller-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 799px) {
+    .avatar-name {
+        display: none;
+    }
+
+    .navbar {
+        flex-basis: 150px;
+    }
+}

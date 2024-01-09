@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CESMI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
+  <body>
+    <section class="div-center-parent">
+      <div class="div-center">
+        <h4 class="text-center">Sign Up</h4>
+        <div id="validator" class="text-center validator-danger">
+          Password does not match
+          <a id="validator-close" class="validator-close" href="">X</a>
+        </div>
+        <form
+          action=""
+          method="post"
+          enctype="multipart/form-data"
+          class="signin-form"
+        >
+          <input
+            class="input-signup"
+            type="text"
+            name="firstname"
+            placeholder="First Name"
+          />
+          <input
+            class="input-signup"
+            type="text"
+            name="lastname"
+            placeholder="Last Name"
+          />
+          <input
+            class="input-signup"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            class="input-signup"
+            type="password"
+            name="createpassword"
+            placeholder="Create Password"
+          />
+          <input
+            class="input-signup"
+            type="password"
+            name="confirmpassword"
+            placeholder="Confirm Password"
+          />
+          <button class="input-signup" type="submit" name="submit">
+            Sign Up
+          </button>
+          <small
+            >Already have an account? <a href="login.html">Sign in</a></small
+          >
+        </form>
+        <div class="signin-platforms">
+          <button class="facebook-signin">Sign in With Facebook</button>
+          <button class="google-signin">Sign in With Google</button>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
