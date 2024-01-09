@@ -211,10 +211,10 @@ input {
 }
 
 .accordion li {
-    --img-1: url('../public/accordion1.jpeg');
-    --img-2: url('../public/accordion2.jpeg');
-    --img-3: url('../public/accordion3.jpeg');
-    --img-4: url('../public/accordion4.png');
+    --img-1: url('../pictures/accordion1.jpeg');
+    --img-2: url('../pictures/accordion2.jpeg');
+    --img-3: url('../pictures/accordion3.jpeg');
+    --img-4: url('../pictures/accordion4.png');
 
     &:nth-child(1) {
         background-image: var(--img-1);
