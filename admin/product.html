@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKICO Admin</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <header id="header" class="header container coll">
+      <i id="aside-coll" class="header__icon" data-lucide="menu"></i>
+      <ul class="nav">
+        <li class="nav__li">ENGLISH</li>
+        <li class="nav__li">
+          <i id="theme-toggle" class="header__icon" data-lucide="sun"></i>
+        </li>
+        <li class="nav__li">
+          <i
+            id="notification-dropdown"
+            class="header__icon"
+            data-lucide="bell"
+          ></i>
+        </li>
+        <li class="nav__li nav__avatar">A</li>
+      </ul>
+    </header>
+    <aside class="aside" id="aside">
+      <h1 class="logo">
+        <i class="logo-icon" data-lucide="shopping-bag"></i>SKICO
+      </h1>
+      <ul class="aside-nav">
+        <li class="aside-nav__li">
+          <i class="aside__icon" data-lucide="layout-dashboard"></i>Dashboard
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn active">
+          <i class="aside__icon" data-lucide="layout-list"></i>Catalog
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="attributes.html">Attributes</a></li>
+            <li><a href="coupon.html">Coupon</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li">
+          <i class="aside__icon" data-lucide="users"></i>Customers
+        </li>
+        <li class="aside-nav__li">
+          <i class="aside__icon" data-lucide="compass"></i>Orders
+        </li>
+        <li class="aside-nav__li">
+          <i class="aside__icon" data-lucide="user"></i>Our Staff
+        </li>
+        <li class="aside-nav__li">
+          <i class="aside__icon" data-lucide="settings"></i>Settings
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="globe"></i>International
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">Languages</a></li>
+            <li><a href="categories.html">Currencies</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="disc-2"></i>Online Store
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">View Store</a></li>
+            <li><a href="categories.html">Store Customization</a></li>
+            <li><a href="attributes.html">Store Settings</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="library"></i>Pages
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">404</a></li>
+            <li><a href="categories.html">Coming Soon</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="btn aside__btn">
+        <i class="logout-icon" data-lucide="log-out"></i>Log Out
+      </button>
+    </aside>
+    <main id="main" class="main container coll">
+      <h2 class="content-head">Product Details</h2>
+      <section class="product-details__cont">
+        <img
+          class="product-details__img"
+          src="../pictures/products/f2.jpg"
+          alt=""
+        />
+        <div class="product-details">
+          <h5>Status: <span class="text-pri-color">Published</span></h5>
+          <h1>Premium T-Shirt</h1>
+          <h3>SKU:</h3>
+          <h1 class="bold">$450.00</h1>
+          <h4>
+            <span class="table-status delivered">in stock</span>
+            <span>QUANTITY: 9944</span>
+          </h4>
+          <p>
+            A T-shirt (also spelled tee-shirt or tee shirt), or tee for short,
+            is a style of fabric shirt named after the T shape of its body and
+            sleeves. Traditionally, it has short sleeves and a round neckline,
+            known as a crew neck, which lacks a collar.
+          </p>
+          <h5 class="product-details__category">
+            Category: <span class="product-details__category-span">Men</span>
+          </h5>
+          <p class="tags-p">
+            <span class="tags">premium-shirt</span
+            ><span class="tags">t-shirt</span
+            ><span class="tags">new-t-shirt</span>
+          </p>
+          <button class="btn-generic">Edit Product</button>
+        </div>
+      </section>
+      <section class="table-section">
+        <h2 class="content-head">Product Variant List</h2>
+        <table>
+          <tr>
+            <th>SR</th>
+            <th>IMAGE</th>
+            <th>COMBINATION</th>
+            <th>SKU</th>
+            <th>BARCODE</th>
+            <th>PRICE</th>
+            <th>DISCOUNT PRICE</th>
+            <th>QUANTITY</th>
+          </tr>
+          <tr>
+            <td data-cell="SR">1</td>
+            <td data-cell="image">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/products/f1.jpg"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="combination">
+                <div class="product-details__table-comb">
+                    <div>Red Small</div>
+                    <div>(644501ab7094a0000851284a-0)</div>
+                </div>
+            </td>
+            <td data-cell="SKU"></td>
+            <td data-cell="Barcode"></td>
+            <td data-cell="price" class="bold-600">$490</td>
+            <td data-cell="discount price" class="bold-600">$490</td>
+            <td data-cell="quantity">1254</td>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="SR">2</td>
+            <td data-cell="image">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/products/f1.jpg"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="combination">
+                <div class="product-details__table-comb">
+                    <div>Red Small</div>
+                    <div>(644501ab7094a0000851284a-0)</div>
+                </div>
+            </td>
+            <td data-cell="SKU"></td>
+            <td data-cell="Barcode"></td>
+            <td data-cell="price" class="bold-600">$490</td>
+            <td data-cell="discount price" class="bold-600">$490</td>
+            <td data-cell="quantity">1254</td>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="SR">3</td>
+            <td data-cell="image">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/products/f1.jpg"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="combination">
+                <div class="product-details__table-comb">
+                    <div>Red Small</div>
+                    <div>(644501ab7094a0000851284a-0)</div>
+                </div>
+            </td>
+            <td data-cell="SKU"></td>
+            <td data-cell="Barcode"></td>
+            <td data-cell="price" class="bold-600">$490</td>
+            <td data-cell="discount price" class="bold-600">$490</td>
+            <td data-cell="quantity">1254</td>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="SR">4</td>
+            <td data-cell="image">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/products/f1.jpg"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="combination">
+                <div class="product-details__table-comb">
+                    <div>Red Small</div>
+                    <div>(644501ab7094a0000851284a-0)</div>
+                </div>
+            </td>
+            <td data-cell="SKU"></td>
+            <td data-cell="Barcode"></td>
+            <td data-cell="price" class="bold-600">$490</td>
+            <td data-cell="discount price" class="bold-600">$490</td>
+            <td data-cell="quantity">1254</td>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="SR">5</td>
+            <td data-cell="image">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/products/f1.jpg"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="combination">
+                <div class="product-details__table-comb">
+                    <div>Red Small</div>
+                    <div>(644501ab7094a0000851284a-0)</div>
+                </div>
+            </td>
+            <td data-cell="SKU"></td>
+            <td data-cell="Barcode"></td>
+            <td data-cell="price" class="bold-600">$490</td>
+            <td data-cell="discount price" class="bold-600">$490</td>
+            <td data-cell="quantity">1254</td>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="SR">6</td>
+            <td data-cell="image">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/products/f1.jpg"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="combination">
+                <div class="product-details__table-comb">
+                    <div>Red Small</div>
+                    <div>(644501ab7094a0000851284a-0)</div>
+                </div>
+            </td>
+            <td data-cell="SKU"></td>
+            <td data-cell="Barcode"></td>
+            <td data-cell="price" class="bold-600">$490</td>
+            <td data-cell="discount price" class="bold-600">$490</td>
+            <td data-cell="quantity">1254</td>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="SR">7</td>
+            <td data-cell="image">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/products/f1.jpg"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="combination">
+                <div class="product-details__table-comb">
+                    <div>Red Small</div>
+                    <div>(644501ab7094a0000851284a-0)</div>
+                </div>
+            </td>
+            <td data-cell="SKU"></td>
+            <td data-cell="Barcode"></td>
+            <td data-cell="price" class="bold-600">$490</td>
+            <td data-cell="discount price" class="bold-600">$490</td>
+            <td data-cell="quantity">1254</td>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="SR">8</td>
+            <td data-cell="image">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/products/f1.jpg"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="combination">
+                <div class="product-details__table-comb">
+                    <div>Red Small</div>
+                    <div>(644501ab7094a0000851284a-0)</div>
+                </div>
+            </td>
+            <td data-cell="SKU"></td>
+            <td data-cell="Barcode"></td>
+            <td data-cell="price" class="bold-600">$490</td>
+            <td data-cell="discount price" class="bold-600">$490</td>
+            <td data-cell="quantity">1254</td>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="SR">9</td>
+            <td data-cell="image">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/products/f1.jpg"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="combination">
+                <div class="product-details__table-comb">
+                    <div>Red Small</div>
+                    <div>(644501ab7094a0000851284a-0)</div>
+                </div>
+            </td>
+            <td data-cell="SKU"></td>
+            <td data-cell="Barcode"></td>
+            <td data-cell="price" class="bold-600">$490</td>
+            <td data-cell="discount price" class="bold-600">$490</td>
+            <td data-cell="quantity">1254</td>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="SR">10</td>
+            <td data-cell="image">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/products/f1.jpg"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="combination">
+                <div class="product-details__table-comb">
+                    <div>Red Small</div>
+                    <div>(644501ab7094a0000851284a-0)</div>
+                </div>
+            </td>
+            <td data-cell="SKU"></td>
+            <td data-cell="Barcode"></td>
+            <td data-cell="price" class="bold-600">$490</td>
+            <td data-cell="discount price" class="bold-600">$490</td>
+            <td data-cell="quantity">1254</td>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="8">
+              <div class="table-footer">
+                <div>SHOWING 1-10 OF 10</div>
+                <div class="pagination">
+                  <div class="pagination__child">
+                    <i class="pagination__icon" data-lucide="chevron-left"></i>
+                  </div>
+                  <div class="pagination__child active">1</div>
+                  <div class="pagination__child">
+                    <i class="pagination__icon" data-lucide="chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
