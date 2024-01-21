@@ -12,8 +12,16 @@
       <i id="aside-coll" class="header__icon" data-lucide="menu"></i>
       <ul class="nav">
         <li class="nav__li">ENGLISH</li>
-        <li class="nav__li"><i class="header__icon" data-lucide="sun"></i></li>
-        <li class="nav__li"><i class="header__icon" data-lucide="bell"></i></li>
+        <li class="nav__li">
+          <i id="theme-toggle" class="header__icon" data-lucide="sun"></i>
+        </li>
+        <li class="nav__li">
+          <i
+            id="notification-dropdown"
+            class="header__icon"
+            data-lucide="bell"
+          ></i>
+        </li>
         <li class="nav__li nav__avatar">A</li>
       </ul>
     </header>
@@ -25,9 +33,17 @@
         <li class="aside-nav__li active">
           <i class="aside__icon" data-lucide="layout-dashboard"></i>Dashboard
         </li>
-        <li class="aside-nav__li">
+        <li class="aside-nav__li aside-dropdown-btn">
           <i class="aside__icon" data-lucide="layout-list"></i>Catalog
           <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="attributes.html">Attributes</a></li>
+            <li><a href="coupon.html">Coupon</a></li>
+          </ul>
         </li>
         <li class="aside-nav__li">
           <i class="aside__icon" data-lucide="users"></i>Customers
@@ -41,17 +57,36 @@
         <li class="aside-nav__li">
           <i class="aside__icon" data-lucide="settings"></i>Settings
         </li>
-        <li class="aside-nav__li">
+        <li class="aside-nav__li aside-dropdown-btn">
           <i class="aside__icon" data-lucide="globe"></i>International
           <i class="icon-more" data-lucide="chevron-right"></i>
         </li>
-        <li class="aside-nav__li">
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">Languages</a></li>
+            <li><a href="categories.html">Currencies</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
           <i class="aside__icon" data-lucide="disc-2"></i>Online Store
           <i class="icon-more" data-lucide="chevron-right"></i>
         </li>
-        <li class="aside-nav__li">
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">View Store</a></li>
+            <li><a href="categories.html">Store Customization</a></li>
+            <li><a href="attributes.html">Store Settings</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
           <i class="aside__icon" data-lucide="library"></i>Pages
           <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">404</a></li>
+            <li><a href="categories.html">Coming Soon</a></li>
+          </ul>
         </li>
       </ul>
       <button class="btn aside__btn">
@@ -347,7 +382,7 @@
             </td>
             <td>
               <div class="invoice__actions">
-                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action fade" data-lucide="printer"></i>
                 <i class="invoice__action" data-lucide="zoom-in"></i>
               </div>
             </td>
