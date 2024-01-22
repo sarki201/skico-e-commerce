@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKICO Admin</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <header id="header" class="header container coll">
+      <i id="aside-coll" class="header__icon" data-lucide="menu"></i>
+      <ul class="nav">
+        <li class="nav__li">ENGLISH</li>
+        <li class="nav__li">
+          <i id="theme-toggle" class="header__icon" data-lucide="sun"></i>
+        </li>
+        <li class="nav__li">
+          <i
+            id="notification-dropdown"
+            class="header__icon"
+            data-lucide="bell"
+          ></i>
+        </li>
+        <li class="nav__li nav__avatar">A</li>
+      </ul>
+    </header>
+    <aside class="aside" id="aside">
+      <h1 class="logo">
+        <i class="logo-icon" data-lucide="shopping-bag"></i>SKICO
+      </h1>
+      <ul class="aside-nav">
+        <li class="aside-nav__li">
+          <i class="aside__icon" data-lucide="layout-dashboard"></i>Dashboard
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn active">
+          <i class="aside__icon" data-lucide="layout-list"></i>Catalog
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="attributes.html">Attributes</a></li>
+            <li><a href="coupon.html">Coupon</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li">
+          <i class="aside__icon" data-lucide="users"></i>Customers
+        </li>
+        <li class="aside-nav__li">
+          <i class="aside__icon" data-lucide="compass"></i>Orders
+        </li>
+        <li class="aside-nav__li">
+          <i class="aside__icon" data-lucide="user"></i>Our Staff
+        </li>
+        <li class="aside-nav__li">
+          <i class="aside__icon" data-lucide="settings"></i>Settings
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="globe"></i>International
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">Languages</a></li>
+            <li><a href="categories.html">Currencies</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="disc-2"></i>Online Store
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">View Store</a></li>
+            <li><a href="categories.html">Store Customization</a></li>
+            <li><a href="attributes.html">Store Settings</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="library"></i>Pages
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">404</a></li>
+            <li><a href="categories.html">Coming Soon</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="btn aside__btn">
+        <i class="logout-icon" data-lucide="log-out"></i>Log Out
+      </button>
+    </aside>
+    <main id="main" class="main container coll">
+      <h2 class="content-head">Category</h2>
+      <p class="bread-crumb flex-align-center bold-600">
+        <a href="categories.html">Categories </a>
+        <i class="bread-crumb__icon" data-lucide="chevron-right"></i>
+        <a href="sub_category.html"> Health and Beauty</a>
+      </p>
+      <section class="products__actions">
+        <div class="products__actions-div sub-category__actions-div">
+          <button class="products__action add-product">
+            <i class="products__action-icon sm" data-lucide="plus"></i> Add
+            Category
+          </button>
+          <button
+            class="products__action bulk-action sub-category__bulk-action"
+          >
+            <i class="products__action-icon sm" data-lucide="square-pen"></i>
+            Bulk Action
+          </button>
+          <button class="products__action delete">
+            <i class="products__action-icon sm" data-lucide="trash-2"></i>
+            Delete
+          </button>
+        </div>
+      </section>
+      <section class="table-section">
+        <table>
+          <tr>
+            <th><input type="checkbox" /></th>
+            <th>ID</th>
+            <th>ICON</th>
+            <th>NAME</th>
+            <th>DESCRIPTION</th>
+            <th>PUBLISHED</th>
+            <th>ACTIONS</th>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td data-cell="id">1234</td>
+            <td data-cell="product">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/features/f1.png"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="name">Cosmetics</td>
+            <td data-cell="description">Cosmetics</td>
+            <td data-cell="published">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+                <i class="invoice__action" data-lucide="square-pen"></i>
+                <i class="invoice__action delete" data-lucide="trash-2"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td data-cell="id">1234</td>
+            <td data-cell="product">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/features/f1.png"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="name">Hair Products</td>
+            <td data-cell="description">Hair Products</td>
+            <td data-cell="published">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+                <i class="invoice__action" data-lucide="square-pen"></i>
+                <i class="invoice__action delete" data-lucide="trash-2"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td data-cell="id">1234</td>
+            <td data-cell="product">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/features/f1.png"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="name">Purfumes</td>
+            <td data-cell="description">Purfumes</td>
+            <td data-cell="published">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+                <i class="invoice__action" data-lucide="square-pen"></i>
+                <i class="invoice__action delete" data-lucide="trash-2"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td data-cell="id">1234</td>
+            <td data-cell="product">
+              <div class="flex-align-center">
+                <img
+                  class="table-img"
+                  src="../pictures/features/f1.png"
+                  width="30px"
+                  height="30px"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </td>
+            <td data-cell="name">Skincare</td>
+            <td data-cell="description">Skincare</td>
+            <td data-cell="published">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <div class="invoice__actions flex-justify-left">
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+                <i class="invoice__action" data-lucide="square-pen"></i>
+                <i class="invoice__action delete" data-lucide="trash-2"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="7">
+              <div class="table-footer">
+                <div>SHOWING 1-4 OF 4</div>
+                <div class="pagination">
+                  <div class="pagination__child">
+                    <i class="pagination__icon" data-lucide="chevron-left"></i>
+                  </div>
+                  <div class="pagination__child active">1</div>
+                  <div class="pagination__child">
+                    <i class="pagination__icon" data-lucide="chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
