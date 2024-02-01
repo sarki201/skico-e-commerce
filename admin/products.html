@@ -41,7 +41,7 @@
             <li><a href="products.html">Products</a></li>
             <li><a href="categories.html">Categories</a></li>
             <li><a href="attributes.html">Attributes</a></li>
-            <li><a href="coupon.html">Coupon</a></li>
+            <li><a href="coupons.html">Coupon</a></li>
           </ul>
         </li>
         <li class="aside-nav__li">
@@ -91,6 +91,7 @@
       <button class="btn aside__btn">
         <i class="logout-icon" data-lucide="log-out"></i>Log Out
       </button>
+      <div id="aside-overlay"></div>
     </aside>
     <main id="main" class="main container coll">
       <h2 class="content-head">Products</h2>
@@ -112,7 +113,10 @@
             <i class="products__action-icon sm" data-lucide="trash-2"></i>
             Delete
           </button>
-          <button class="products__action add-product">
+          <button
+            data-modal-target="#add-product-modal"
+            class="products__action add-product"
+          >
             <i class="products__action-icon sm" data-lucide="plus"></i> Add
             Product
           </button>
@@ -964,6 +968,132 @@
           </tr>
         </table>
       </section>
+      <div id="add-product-modal" class="add-product__modal page-modal modal">
+        <form action="#" method="post">
+          <div class="add-product__header">
+            <div class="add-product__heading">
+              <h2>Add Product</h2>
+              <h5>Add your product and necessary information from here</h5>
+            </div>
+            <div class="add-product__nav">
+              <button class="x-close" data-close-button>&times;</button>
+            </div>
+          </div>
+          <div class="add-product__info-head">
+            <div class="add-product__info-head__child active">Basic Info</div>
+          </div>
+          <div class="add-product__info">
+            <div class="form__items">
+              <label for="product-name">Product Title/Name</label>
+              <div>
+                <input
+                  type="text"
+                  id="product-name"
+                  placeholder="Product Title/Name"
+                />
+                <p class="form-validator-err">This is required!</p>
+              </div>
+            </div>
+            <div class="form__items">
+              <label for="product-description">Product Description</label>
+              <textarea
+                name=""
+                id="product-description"
+                cols="30"
+                rows="10"
+                placeholder="Product Description"
+              ></textarea>
+            </div>
+            <div class="form__items">
+              <label for="">Product Images</label>
+              <div>
+                <label
+                  for="product-img"
+                  id="product-image"
+                  class="product-drag-and-drop__cont"
+                >
+                  <input
+                    type="file"
+                    accept="Image/*"
+                    id="product-img"
+                    multiple
+                    hidden
+                  />
+                  <i class="product-dd-img" data-lucide="upload-cloud"></i>
+                  <h5>Drag your images here</h5>
+                  <p>(Only *.jpeg, *.webp and *.png images will be accepted)</p>
+                </label>
+                <div id="img-view" class="add-product__images"></div>
+              </div>
+            </div>
+            <div class="form__items">
+              <label for="product-sku">Product SKU</label>
+              <input type="text" id="product-sku" placeholder="Product SKU" />
+            </div>
+            <div class="form__items">
+              <label for="product-barcode">Product Barcode</label>
+              <input
+                type="text"
+                id="product-barcode"
+                placeholder="Product Barcode"
+              />
+            </div>
+            <div class="form__items">
+              <label for="product-category">Category</label>
+              <select name="" id="product-category">
+                <option value="" selected disabled>Category</option>
+                <option value="">Men</option>
+                <option value="">Women</option>
+                <option value="">Food</option>
+                <option value="">Beauty</option>
+              </select>
+            </div>
+            <div class="form__items">
+              <label for="default-category">Default Category</label>
+              <select name="" id="defaoutl-category">
+                <option value="" selected disabled>Category</option>
+                <option value="">Men</option>
+                <option value="">Women</option>
+                <option value="">Food</option>
+                <option value="">Beauty</option>
+              </select>
+            </div>
+            <div class="form__items">
+              <label for="product-price">Product Price</label>
+              <input type="number" id="product-price" placeholder="Price" />
+            </div>
+            <div class="form__items">
+              <label for="product-discount-price">Discount Price</label>
+              <input
+                type="number"
+                id="product-discount-price"
+                placeholder="Discount Price"
+              />
+            </div>
+            <div class="form__items">
+              <label for="product-quantity">Product Quantity</label>
+              <input
+                type="number"
+                id="product-quantity"
+                placeholder="Quantity"
+              />
+            </div>
+            <div class="form__items">
+              <label for="product-slug">Product Slug</label>
+              <input type="text" id="product-slug" placeholder="Slug" />
+            </div>
+            <div class="form__items">
+              <label for="product-tags">Product Tags</label>
+              <input type="text" id="product-tags" placeholder="Tags" />
+            </div>
+          </div>
+          <div class="add-product__footer">
+            <button class="close" data-close-button>Cancel</button>
+            <button class="btn-generic">Add Product</button>
+          </div>
+        </form>
+      </div>
+      <div id="overlay"></div>
     </main>
     <footer class="footer"></footer>
     <script src="https://unpkg.com/lucide@latest"></script>
