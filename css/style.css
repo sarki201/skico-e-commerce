@@ -899,7 +899,8 @@ footer .copyright {
 }
 
 .pop-up {
-    width: 500px;
+    margin-inline: 10px;
+    max-width: 500px;
     background-color: #fff;
     border-radius: 10px;
     position: relative;
@@ -1175,6 +1176,10 @@ footer .copyright {
 @media (max-width: 799px) {
     .container-p1 {
         padding: 40px;
+    }
+
+    .header {
+        padding-inline: 20px;
     }
 
     .nav {
