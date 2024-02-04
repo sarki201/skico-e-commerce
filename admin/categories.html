@@ -30,7 +30,10 @@
       </h1>
       <ul class="aside-nav">
         <li class="aside-nav__li">
-          <i class="aside__icon" data-lucide="layout-dashboard"></i>Dashboard
+          <a href="/admin/"
+            ><i class="aside__icon" data-lucide="layout-dashboard"></i
+            >Dashboard</a
+          >
         </li>
         <li class="aside-nav__li aside-dropdown-btn active">
           <i class="aside__icon" data-lucide="layout-list"></i>Catalog
@@ -45,16 +48,24 @@
           </ul>
         </li>
         <li class="aside-nav__li">
-          <i class="aside__icon" data-lucide="users"></i>Customers
+          <a href="customers.html">
+            <i class="aside__icon" data-lucide="users"></i>Customers</a
+          >
         </li>
         <li class="aside-nav__li">
-          <i class="aside__icon" data-lucide="compass"></i>Orders
+          <a href="orders.html">
+            <i class="aside__icon" data-lucide="compass"></i>Orders</a
+          >
         </li>
         <li class="aside-nav__li">
-          <i class="aside__icon" data-lucide="user"></i>Our Staff
+          <a href="our_staff.html">
+            <i class="aside__icon" data-lucide="user"></i>Our Staff</a
+          >
         </li>
         <li class="aside-nav__li">
-          <i class="aside__icon" data-lucide="settings"></i>Settings
+          <a href="settings.html">
+            <i class="aside__icon" data-lucide="settings"></i>Settings</a
+          >
         </li>
         <li class="aside-nav__li aside-dropdown-btn">
           <i class="aside__icon" data-lucide="globe"></i>International
@@ -62,8 +73,8 @@
         </li>
         <li class="aside-nav__li-dropdown aside-dropdown aside-display">
           <ul>
-            <li><a href="products.html">Languages</a></li>
-            <li><a href="categories.html">Currencies</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="currencies.html">Currencies</a></li>
           </ul>
         </li>
         <li class="aside-nav__li aside-dropdown-btn">
@@ -72,9 +83,9 @@
         </li>
         <li class="aside-nav__li-dropdown aside-dropdown aside-display">
           <ul>
-            <li><a href="products.html">View Store</a></li>
-            <li><a href="categories.html">Store Customization</a></li>
-            <li><a href="attributes.html">Store Settings</a></li>
+            <li><a href="/">View Store</a></li>
+            <li><a href="store_customization.html">Store Customization</a></li>
+            <li><a href="store_settings.html">Store Settings</a></li>
           </ul>
         </li>
         <li class="aside-nav__li aside-dropdown-btn">
@@ -83,14 +94,15 @@
         </li>
         <li class="aside-nav__li-dropdown aside-dropdown aside-display">
           <ul>
-            <li><a href="products.html">404</a></li>
-            <li><a href="categories.html">Coming Soon</a></li>
+            <li><a href="404.html">404</a></li>
+            <li><a href="comming_soon.html">Coming Soon</a></li>
           </ul>
         </li>
       </ul>
       <button class="btn aside__btn">
         <i class="logout-icon" data-lucide="log-out"></i>Log Out
       </button>
+      <div id="aside-overlay"></div>
     </aside>
     <main id="main" class="main container coll">
       <h2 class="content-head">Categories</h2>
@@ -112,7 +124,10 @@
             <i class="products__action-icon sm" data-lucide="trash-2"></i>
             Delete
           </button>
-          <button class="products__action add-product">
+          <button
+            data-modal-target="#add-category-modal"
+            class="products__action add-product"
+          >
             <i class="products__action-icon sm" data-lucide="plus"></i> Add
             Category
           </button>
@@ -575,6 +590,92 @@
           </tr>
         </table>
       </section>
+      <section
+        id="add-category-modal"
+        class="add-category__modal page-modal modal"
+      >
+        <form action="#" method="post">
+          <div class="add-product__header">
+            <div class="add-product__heading">
+              <h2>Add Category</h2>
+              <h5>
+                Add your Product category and necessary information from here
+              </h5>
+            </div>
+            <div class="add-product__nav">
+              <button class="x-close" data-close-button>&times;</button>
+            </div>
+          </div>
+          <div class="add-product__info">
+            <div class="form__items">
+              <label for="product-name">Name</label>
+              <div>
+                <input
+                  type="text"
+                  id="product-name"
+                  placeholder="Category title"
+                />
+                <p class="form-validator-err">This is required!</p>
+              </div>
+            </div>
+            <div class="form__items">
+              <label for="product-description">Description</label>
+              <textarea
+                name=""
+                id="product-description"
+                cols="30"
+                rows="10"
+                placeholder="category description"
+              ></textarea>
+            </div>
+            <div class="form__items">
+              <label for="product-category">Parent Category</label>
+              <select name="" id="product-category">
+                <option value="" selected disabled>Category</option>
+                <option value="">Men</option>
+                <option value="">Women</option>
+                <option value="">Food</option>
+                <option value="">Beauty</option>
+              </select>
+            </div>
+            <div class="form__items">
+              <label for="">Product Images</label>
+              <div>
+                <label
+                  for="product-img"
+                  id="product-image"
+                  class="product-drag-and-drop__cont"
+                >
+                  <input
+                    type="file"
+                    accept="Image/*"
+                    id="product-img"
+                    multiple
+                    hidden
+                  />
+                  <i class="product-dd-img" data-lucide="upload-cloud"></i>
+                  <h5>Drag your images here</h5>
+                  <p>(Only *.jpeg, *.webp and *.png images will be accepted)</p>
+                </label>
+                <div id="img-view" class="add-product__images"></div>
+              </div>
+            </div>
+            <div class="form__items">
+              <label for="product-barcode">Published</label>
+              <input
+                type="text"
+                id="product-barcode"
+                placeholder="Product Barcode"
+              />
+            </div>
+          </div>
+          <div class="add-product__footer">
+            <button class="close" data-close-button>Cancel</button>
+            <button class="btn-generic">Add Category</button>
+          </div>
+        </form>
+      </section>
+      <div id="overlay"></div>
     </main>
     <footer class="footer"></footer>
     <script src="https://unpkg.com/lucide@latest"></script>

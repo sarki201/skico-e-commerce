@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKICO Admin</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <header id="header" class="header container coll">
+      <i id="aside-coll" class="header__icon" data-lucide="menu"></i>
+      <ul class="nav">
+        <li class="nav__li">ENGLISH</li>
+        <li class="nav__li">
+          <i id="theme-toggle" class="header__icon" data-lucide="sun"></i>
+        </li>
+        <li class="nav__li">
+          <i
+            id="notification-dropdown"
+            class="header__icon"
+            data-lucide="bell"
+          ></i>
+        </li>
+        <li class="nav__li nav__avatar">A</li>
+      </ul>
+    </header>
+    <aside class="aside" id="aside">
+      <h1 class="logo">
+        <i class="logo-icon" data-lucide="shopping-bag"></i>SKICO
+      </h1>
+      <ul class="aside-nav">
+        <li class="aside-nav__li">
+          <a href="/admin/"
+            ><i class="aside__icon" data-lucide="layout-dashboard"></i
+            >Dashboard</a
+          >
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="layout-list"></i>Catalog
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="attributes.html">Attributes</a></li>
+            <li><a href="coupons.html">Coupon</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li">
+          <a href="customers.html">
+            <i class="aside__icon" data-lucide="users"></i>Customers</a
+          >
+        </li>
+        <li class="aside-nav__li active">
+          <a href="orders.html">
+            <i class="aside__icon" data-lucide="compass"></i>Orders</a
+          >
+        </li>
+        <li class="aside-nav__li">
+          <a href="our_staff.html">
+            <i class="aside__icon" data-lucide="user"></i>Our Staff</a
+          >
+        </li>
+        <li class="aside-nav__li">
+          <a href="settings.html">
+            <i class="aside__icon" data-lucide="settings"></i>Settings</a
+          >
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="globe"></i>International
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="currencies.html">Currencies</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="disc-2"></i>Online Store
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="/">View Store</a></li>
+            <li><a href="store_customization.html">Store Customization</a></li>
+            <li><a href="store_settings.html">Store Settings</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="library"></i>Pages
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="404.html">404</a></li>
+            <li><a href="comming_soon.html">Coming Soon</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="btn aside__btn">
+        <i class="logout-icon" data-lucide="log-out"></i>Log Out
+      </button>
+      <div id="aside-overlay"></div>
+    </aside>
+    <main id="main" class="main container coll">
+      <h2 class="content-head">Orders</h2>
+      <section class="orders__actions">
+        <div class="orders__actions-first-child">
+          <input type="text" placeholder="Search by customer's name" />
+          <select name="" id="">
+            <option value="" hidden>Status</option>
+            <option value="">Processing</option>
+            <option value="">Pending</option>
+            <option value="">Delivered</option>
+            <option value="">Canceled</option>
+          </select>
+          <select name="" id="">
+            <option value="" hidden>Order Limits</option>
+            <option value="">Last 7 days</option>
+            <option value="">Last 12 days</option>
+            <option value="">Last 20 days</option>
+            <option value="">Last 30 days</option>
+          </select>
+          <select name="" id="">
+            <option value="" hidden>Method</option>
+            <option value="">Cash</option>
+            <option value="">Card</option>
+            <option value="">Credit</option>
+          </select>
+          <button class="btn-generic">
+            Download All Orders
+            <i class="btn-icon" data-lucide="download-cloud"></i>
+          </button>
+        </div>
+        <div class="orders__actions-second-child">
+          <label class="calender-label" for="start-date">
+            <span>Start Date</span><input type="date" name="" id="start-date"
+          /></label>
+          <label class="calender-label" for="end-date"
+            ><span>End Date</span><input type="date" name="" id="end-date"
+          /></label>
+          <div class="filter-reset__cont">
+            <button class="filter">Filter</button>
+            <button class="reset">Reset</button>
+          </div>
+        </div>
+      </section>
+      <section class="table-section">
+        <table>
+          <tr>
+            <th>INVOICE NO</th>
+            <th>ORDER TIME</th>
+            <th>CUSTOMER NAME</th>
+            <th>METHOD</th>
+            <th>AMOUNT</th>
+            <th>STATUS</th>
+            <th>ACTION</th>
+            <th>INVOICE</th>
+          </tr>
+          <tr>
+            <td data-cell="invoine no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status delivered">Delivered</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="" selected>Delivered</option>
+                <option value="">Processing</option>
+                <option value="">Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <a href="invoice.html">
+                  <i class="invoice__action" data-lucide="zoom-in"></i
+                ></a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status processing">Processing</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="" selected>Processing</option>
+                <option value="">Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status pending">Pending</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="" selected>Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status delivered">Delivered</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="" selected>Delivered</option>
+                <option value="">Processing</option>
+                <option value="">Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status canceled">Canceled</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="">Pending</option>
+                <option value="" selected>Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status processing">Processing</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="" selected>Processing</option>
+                <option value="">Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status pending">Pending</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="" selected>Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action fade" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status pending">Pending</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="" selected>Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status pending">Pending</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="" selected>Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status pending">Pending</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="" selected>Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status pending">Pending</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="" selected>Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status pending">Pending</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="" selected>Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoine no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status delivered">Delivered</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="" selected>Delivered</option>
+                <option value="">Processing</option>
+                <option value="">Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status processing">Processing</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="" selected>Processing</option>
+                <option value="">Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status pending">Pending</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="" selected>Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status delivered">Delivered</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="" selected>Delivered</option>
+                <option value="">Processing</option>
+                <option value="">Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status canceled">Canceled</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="">Pending</option>
+                <option value="" selected>Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status processing">Processing</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="" selected>Processing</option>
+                <option value="">Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status pending">Pending</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="" selected>Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action fade" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="invoice no" class="bold-700">10662</td>
+            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+            <td data-cell="customer">shashank phatkure</td>
+            <td data-cell="method" class="bold-700">Cash</td>
+            <td data-cell="amount" class="bold-700">$602.40</td>
+            <td data-cell="status">
+              <div class="table-status pending">Pending</div>
+            </td>
+            <td data-cell="action">
+              <select name="actions" id="">
+                <option value="">Delivered</option>
+                <option value="">Processing</option>
+                <option value="" selected>Pending</option>
+                <option value="">Canceled</option>
+              </select>
+            </td>
+            <td>
+              <div class="invoice__actions">
+                <i class="invoice__action" data-lucide="printer"></i>
+                <i class="invoice__action" data-lucide="zoom-in"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="8">
+              <div class="table-footer">
+                <div>SHOWING 1-20 OF 668</div>
+                <div class="pagination">
+                  <div class="pagination__child">
+                    <i class="pagination__icon" data-lucide="chevron-left"></i>
+                  </div>
+                  <div class="pagination__child active">1</div>
+                  <div class="pagination__child">2</div>
+                  <div class="pagination__child">3</div>
+                  <div class="pagination__child">4</div>
+                  <div class="pagination__child">5</div>
+                  <div class="pagination__child">...</div>
+                  <div class="pagination__child">34</div>
+                  <div class="pagination__child">
+                    <i class="pagination__icon" data-lucide="chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <div id="overlay"></div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
