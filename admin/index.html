@@ -9,21 +9,23 @@
   </head>
   <body>
     <header id="header" class="header container coll">
-      <i id="aside-coll" class="header__icon" data-lucide="menu"></i>
-      <ul class="nav">
-        <li class="nav__li">ENGLISH</li>
-        <li class="nav__li">
-          <i id="theme-toggle" class="header__icon" data-lucide="sun"></i>
-        </li>
-        <li class="nav__li">
-          <i
-            id="notification-dropdown"
-            class="header__icon"
-            data-lucide="bell"
-          ></i>
-        </li>
-        <li class="nav__li nav__avatar">A</li>
-      </ul>
+      <div class="margin-container">
+        <i id="aside-coll" class="header__icon" data-lucide="menu"></i>
+        <ul class="nav">
+          <li class="nav__li">ENGLISH</li>
+          <li class="nav__li">
+            <i id="theme-toggle" class="header__icon" data-lucide="sun"></i>
+          </li>
+          <li class="nav__li">
+            <i
+              id="notification-dropdown"
+              class="header__icon"
+              data-lucide="bell"
+            ></i>
+          </li>
+          <li class="nav__li nav__avatar">A</li>
+        </ul>
+      </div>
     </header>
     <aside class="aside" id="aside">
       <h1 class="logo">
@@ -106,346 +108,354 @@
       <div id="aside-overlay"></div>
     </aside>
     <main id="main" class="main container coll">
-      <h2 class="content-head">Dashboard Overview</h2>
-      <div class="large-cards">
-        <div class="large-card">
-          <i class="large-card__icon" data-lucide="layers"></i>
-          <p class="large-card__p">Today Orders</p>
-          <h2 class="large-card__price">$0.00</h2>
-          <div class="large-card__price-details">
-            <div class="large-card__price-detail">
-              <span>Cash: </span>
-              <span>$0.00</span>
-            </div>
-            <div class="large-card__price-detail">
-              <span>Card: </span>
-              <span>$0.00</span>
-            </div>
-            <div class="large-card__price-detail">
-              <span>Credit: </span>
-              <span>$0.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="large-card">
-          <i class="large-card__icon" data-lucide="layers"></i>
-          <p class="large-card__p">Yesterday Orders</p>
-          <h2 class="large-card__price">$170.00</h2>
-          <div class="large-card__price-details">
-            <div class="large-card__price-detail">
-              <span>Cash: </span>
-              <span>$170.00</span>
-            </div>
-            <div class="large-card__price-detail">
-              <span>Card: </span>
-              <span>$0.00</span>
-            </div>
-            <div class="large-card__price-detail">
-              <span>Credit: </span>
-              <span>$0.00</span>
+      <div class="margin-container">
+        <h2 class="content-head">Dashboard Overview</h2>
+        <div class="large-cards">
+          <div class="large-card">
+            <i class="large-card__icon" data-lucide="layers"></i>
+            <p class="large-card__p">Today Orders</p>
+            <h2 class="large-card__price">$0.00</h2>
+            <div class="large-card__price-details">
+              <div class="large-card__price-detail">
+                <span>Cash: </span>
+                <span>$0.00</span>
+              </div>
+              <div class="large-card__price-detail">
+                <span>Card: </span>
+                <span>$0.00</span>
+              </div>
+              <div class="large-card__price-detail">
+                <span>Credit: </span>
+                <span>$0.00</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="large-card">
-          <i class="large-card__icon" data-lucide="shopping-cart"></i>
-          <p class="large-card__p">This Month</p>
-          <h2 class="large-card__price">$2,490.20</h2>
-        </div>
-        <div class="large-card">
-          <i class="large-card__icon" data-lucide="credit-card"></i>
-          <p class="large-card__p">Last Month</p>
-          <h2 class="large-card__price">$12,006.70</h2>
-        </div>
-        <div class="large-card">
-          <i class="large-card__icon" data-lucide="credit-card"></i>
-          <p class="large-card__p">All Time Sales</p>
-          <h2 class="large-card__price">$531,080.50</h2>
-        </div>
-      </div>
-      <div class="small-cards">
-        <div class="small-card">
-          <div class="small-card__icon-div">
-            <i class="small-card__icon" data-lucide="shopping-cart"></i>
-          </div>
-          <div class="small-card__details">
-            <p>Total Order</p>
-            <h2>669</h2>
-          </div>
-        </div>
-        <div class="small-card">
-          <div class="small-card__icon-div">
-            <i class="small-card__icon" data-lucide="refresh-cw"></i>
-          </div>
-          <div class="small-card__details">
-            <p>Orders Pending</p>
-            <h2>232</h2>
-          </div>
-        </div>
-        <div class="small-card">
-          <div class="small-card__icon-div">
-            <i class="small-card__icon" data-lucide="truck"></i>
-          </div>
-          <div class="small-card__details">
-            <p>Orders Processing</p>
-            <h2>72</h2>
-          </div>
-        </div>
-        <div class="small-card">
-          <div class="small-card__icon-div">
-            <i class="small-card__icon" data-lucide="check"></i>
-          </div>
-          <div class="small-card__details">
-            <p>Order Delivered</p>
-            <h2>336</h2>
-          </div>
-        </div>
-      </div>
-      <div class="charts">
-        <div class="table-line-chart">
-          <h2 class="chart-des">Weekly Sales</h2>
-          <div class="line-chart-toggle">
-            <div class="line-chart-toggle-child">Sales</div>
-            <div class="line-chart-toggle-child active">Orders</div>
-          </div>
-          <div>
-            <canvas id="lineChart" class="line-chart"></canvas>
-          </div>
-        </div>
-        <div class="table-line-chart">
-          <h2 class="chart-des">Best Selling Products</h2>
-          <div class="pie-chart__container">
-            <canvas id="pieChart" class="pie-chart"></canvas>
-          </div>
-        </div>
-      </div>
-      <div class="recent-orders">
-        <h2 class="content-head">Recent Orders</h2>
-        <table>
-          <tr>
-            <th>INVOICE NO</th>
-            <th>ORDER TIME</th>
-            <th>CUSTOMER NAME</th>
-            <th>METHOD</th>
-            <th>AMOUNT</th>
-            <th>STATUS</th>
-            <th>ACTION</th>
-            <th>INVOICE</th>
-          </tr>
-          <tr>
-            <td data-cell="invoine no" class="bold-700">10662</td>
-            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
-            <td data-cell="customer">shashank phatkure</td>
-            <td data-cell="method" class="bold-700">Cash</td>
-            <td data-cell="amount" class="bold-700">$602.40</td>
-            <td data-cell="status">
-              <div class="table-status delivered">Delivered</div>
-            </td>
-            <td data-cell="action">
-              <select name="actions" id="">
-                <option value="" selected>Delivered</option>
-                <option value="">Processing</option>
-                <option value="">Pending</option>
-                <option value="">Canceled</option>
-              </select>
-            </td>
-            <td>
-              <div class="invoice__actions">
-                <i class="invoice__action" data-lucide="printer"></i>
-                <i class="invoice__action" data-lucide="zoom-in"></i>
+          <div class="large-card">
+            <i class="large-card__icon" data-lucide="layers"></i>
+            <p class="large-card__p">Yesterday Orders</p>
+            <h2 class="large-card__price">$170.00</h2>
+            <div class="large-card__price-details">
+              <div class="large-card__price-detail">
+                <span>Cash: </span>
+                <span>$170.00</span>
               </div>
-            </td>
-          </tr>
-          <tr>
-            <td data-cell="invoice no" class="bold-700">10662</td>
-            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
-            <td data-cell="customer">shashank phatkure</td>
-            <td data-cell="method" class="bold-700">Cash</td>
-            <td data-cell="amount" class="bold-700">$602.40</td>
-            <td data-cell="status">
-              <div class="table-status processing">Processing</div>
-            </td>
-            <td data-cell="action">
-              <select name="actions" id="">
-                <option value="">Delivered</option>
-                <option value="" selected>Processing</option>
-                <option value="">Pending</option>
-                <option value="">Canceled</option>
-              </select>
-            </td>
-            <td>
-              <div class="invoice__actions">
-                <i class="invoice__action" data-lucide="printer"></i>
-                <i class="invoice__action" data-lucide="zoom-in"></i>
+              <div class="large-card__price-detail">
+                <span>Card: </span>
+                <span>$0.00</span>
               </div>
-            </td>
-          </tr>
-          <tr>
-            <td data-cell="invoice no" class="bold-700">10662</td>
-            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
-            <td data-cell="customer">shashank phatkure</td>
-            <td data-cell="method" class="bold-700">Cash</td>
-            <td data-cell="amount" class="bold-700">$602.40</td>
-            <td data-cell="status">
-              <div class="table-status pending">Pending</div>
-            </td>
-            <td data-cell="action">
-              <select name="actions" id="">
-                <option value="">Delivered</option>
-                <option value="">Processing</option>
-                <option value="" selected>Pending</option>
-                <option value="">Canceled</option>
-              </select>
-            </td>
-            <td>
-              <div class="invoice__actions">
-                <i class="invoice__action" data-lucide="printer"></i>
-                <i class="invoice__action" data-lucide="zoom-in"></i>
+              <div class="large-card__price-detail">
+                <span>Credit: </span>
+                <span>$0.00</span>
               </div>
-            </td>
-          </tr>
-          <tr>
-            <td data-cell="invoice no" class="bold-700">10662</td>
-            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
-            <td data-cell="customer">shashank phatkure</td>
-            <td data-cell="method" class="bold-700">Cash</td>
-            <td data-cell="amount" class="bold-700">$602.40</td>
-            <td data-cell="status">
-              <div class="table-status delivered">Delivered</div>
-            </td>
-            <td data-cell="action">
-              <select name="actions" id="">
-                <option value="" selected>Delivered</option>
-                <option value="">Processing</option>
-                <option value="">Pending</option>
-                <option value="">Canceled</option>
-              </select>
-            </td>
-            <td>
-              <div class="invoice__actions">
-                <i class="invoice__action" data-lucide="printer"></i>
-                <i class="invoice__action" data-lucide="zoom-in"></i>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td data-cell="invoice no" class="bold-700">10662</td>
-            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
-            <td data-cell="customer">shashank phatkure</td>
-            <td data-cell="method" class="bold-700">Cash</td>
-            <td data-cell="amount" class="bold-700">$602.40</td>
-            <td data-cell="status">
-              <div class="table-status canceled">Canceled</div>
-            </td>
-            <td data-cell="action">
-              <select name="actions" id="">
-                <option value="">Delivered</option>
-                <option value="">Processing</option>
-                <option value="">Pending</option>
-                <option value="" selected>Canceled</option>
-              </select>
-            </td>
-            <td>
-              <div class="invoice__actions">
-                <i class="invoice__action" data-lucide="printer"></i>
-                <i class="invoice__action" data-lucide="zoom-in"></i>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td data-cell="invoice no" class="bold-700">10662</td>
-            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
-            <td data-cell="customer">shashank phatkure</td>
-            <td data-cell="method" class="bold-700">Cash</td>
-            <td data-cell="amount" class="bold-700">$602.40</td>
-            <td data-cell="status">
-              <div class="table-status processing">Processing</div>
-            </td>
-            <td data-cell="action">
-              <select name="actions" id="">
-                <option value="">Delivered</option>
-                <option value="" selected>Processing</option>
-                <option value="">Pending</option>
-                <option value="">Canceled</option>
-              </select>
-            </td>
-            <td>
-              <div class="invoice__actions">
-                <i class="invoice__action" data-lucide="printer"></i>
-                <i class="invoice__action" data-lucide="zoom-in"></i>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td data-cell="invoice no" class="bold-700">10662</td>
-            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
-            <td data-cell="customer">shashank phatkure</td>
-            <td data-cell="method" class="bold-700">Cash</td>
-            <td data-cell="amount" class="bold-700">$602.40</td>
-            <td data-cell="status">
-              <div class="table-status pending">Pending</div>
-            </td>
-            <td data-cell="action">
-              <select name="actions" id="">
-                <option value="">Delivered</option>
-                <option value="">Processing</option>
-                <option value="" selected>Pending</option>
-                <option value="">Canceled</option>
-              </select>
-            </td>
-            <td>
-              <div class="invoice__actions">
-                <i class="invoice__action fade" data-lucide="printer"></i>
-                <i class="invoice__action" data-lucide="zoom-in"></i>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td data-cell="invoice no" class="bold-700">10662</td>
-            <td data-cell="time">Jan 18, 2024 3:43 PM</td>
-            <td data-cell="customer">shashank phatkure</td>
-            <td data-cell="method" class="bold-700">Cash</td>
-            <td data-cell="amount" class="bold-700">$602.40</td>
-            <td data-cell="status">
-              <div class="table-status pending">Pending</div>
-            </td>
-            <td data-cell="action">
-              <select name="actions" id="">
-                <option value="">Delivered</option>
-                <option value="">Processing</option>
-                <option value="" selected>Pending</option>
-                <option value="">Canceled</option>
-              </select>
-            </td>
-            <td>
-              <div class="invoice__actions">
-                <i class="invoice__action" data-lucide="printer"></i>
-                <i class="invoice__action" data-lucide="zoom-in"></i>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="8">
-              <div class="table-footer">
-                <div>SHOWING 1-8 OF 668</div>
-                <div class="pagination">
-                  <div class="pagination__child">
-                    <i class="pagination__icon" data-lucide="chevron-left"></i>
-                  </div>
-                  <div class="pagination__child active">1</div>
-                  <div class="pagination__child">2</div>
-                  <div class="pagination__child">3</div>
-                  <div class="pagination__child">4</div>
-                  <div class="pagination__child">5</div>
-                  <div class="pagination__child">...</div>
-                  <div class="pagination__child">84</div>
-                  <div class="pagination__child">
-                    <i class="pagination__icon" data-lucide="chevron-right"></i>
+            </div>
+          </div>
+          <div class="large-card">
+            <i class="large-card__icon" data-lucide="shopping-cart"></i>
+            <p class="large-card__p">This Month</p>
+            <h2 class="large-card__price">$2,490.20</h2>
+          </div>
+          <div class="large-card">
+            <i class="large-card__icon" data-lucide="credit-card"></i>
+            <p class="large-card__p">Last Month</p>
+            <h2 class="large-card__price">$12,006.70</h2>
+          </div>
+          <div class="large-card">
+            <i class="large-card__icon" data-lucide="credit-card"></i>
+            <p class="large-card__p">All Time Sales</p>
+            <h2 class="large-card__price">$531,080.50</h2>
+          </div>
+        </div>
+        <div class="small-cards">
+          <div class="small-card">
+            <div class="small-card__icon-div">
+              <i class="small-card__icon" data-lucide="shopping-cart"></i>
+            </div>
+            <div class="small-card__details">
+              <p>Total Order</p>
+              <h2>669</h2>
+            </div>
+          </div>
+          <div class="small-card">
+            <div class="small-card__icon-div">
+              <i class="small-card__icon" data-lucide="refresh-cw"></i>
+            </div>
+            <div class="small-card__details">
+              <p>Orders Pending</p>
+              <h2>232</h2>
+            </div>
+          </div>
+          <div class="small-card">
+            <div class="small-card__icon-div">
+              <i class="small-card__icon" data-lucide="truck"></i>
+            </div>
+            <div class="small-card__details">
+              <p>Orders Processing</p>
+              <h2>72</h2>
+            </div>
+          </div>
+          <div class="small-card">
+            <div class="small-card__icon-div">
+              <i class="small-card__icon" data-lucide="check"></i>
+            </div>
+            <div class="small-card__details">
+              <p>Order Delivered</p>
+              <h2>336</h2>
+            </div>
+          </div>
+        </div>
+        <div class="charts">
+          <div class="table-line-chart">
+            <h2 class="chart-des">Weekly Sales</h2>
+            <div class="line-chart-toggle">
+              <div class="line-chart-toggle-child">Sales</div>
+              <div class="line-chart-toggle-child active">Orders</div>
+            </div>
+            <div>
+              <canvas id="lineChart" class="line-chart"></canvas>
+            </div>
+          </div>
+          <div class="table-line-chart">
+            <h2 class="chart-des">Best Selling Products</h2>
+            <div class="pie-chart__container">
+              <canvas id="pieChart" class="pie-chart"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="recent-orders">
+          <h2 class="content-head">Recent Orders</h2>
+          <table>
+            <tr>
+              <th>INVOICE NO</th>
+              <th>ORDER TIME</th>
+              <th>CUSTOMER NAME</th>
+              <th>METHOD</th>
+              <th>AMOUNT</th>
+              <th>STATUS</th>
+              <th>ACTION</th>
+              <th>INVOICE</th>
+            </tr>
+            <tr>
+              <td data-cell="invoine no" class="bold-700">10662</td>
+              <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+              <td data-cell="customer">shashank phatkure</td>
+              <td data-cell="method" class="bold-700">Cash</td>
+              <td data-cell="amount" class="bold-700">$602.40</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Delivered</div>
+              </td>
+              <td data-cell="action">
+                <select name="actions" id="">
+                  <option value="" selected>Delivered</option>
+                  <option value="">Processing</option>
+                  <option value="">Pending</option>
+                  <option value="">Canceled</option>
+                </select>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="printer"></i>
+                  <i class="invoice__action" data-lucide="zoom-in"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="invoice no" class="bold-700">10662</td>
+              <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+              <td data-cell="customer">shashank phatkure</td>
+              <td data-cell="method" class="bold-700">Cash</td>
+              <td data-cell="amount" class="bold-700">$602.40</td>
+              <td data-cell="status">
+                <div class="table-status processing">Processing</div>
+              </td>
+              <td data-cell="action">
+                <select name="actions" id="">
+                  <option value="">Delivered</option>
+                  <option value="" selected>Processing</option>
+                  <option value="">Pending</option>
+                  <option value="">Canceled</option>
+                </select>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="printer"></i>
+                  <i class="invoice__action" data-lucide="zoom-in"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="invoice no" class="bold-700">10662</td>
+              <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+              <td data-cell="customer">shashank phatkure</td>
+              <td data-cell="method" class="bold-700">Cash</td>
+              <td data-cell="amount" class="bold-700">$602.40</td>
+              <td data-cell="status">
+                <div class="table-status pending">Pending</div>
+              </td>
+              <td data-cell="action">
+                <select name="actions" id="">
+                  <option value="">Delivered</option>
+                  <option value="">Processing</option>
+                  <option value="" selected>Pending</option>
+                  <option value="">Canceled</option>
+                </select>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="printer"></i>
+                  <i class="invoice__action" data-lucide="zoom-in"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="invoice no" class="bold-700">10662</td>
+              <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+              <td data-cell="customer">shashank phatkure</td>
+              <td data-cell="method" class="bold-700">Cash</td>
+              <td data-cell="amount" class="bold-700">$602.40</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Delivered</div>
+              </td>
+              <td data-cell="action">
+                <select name="actions" id="">
+                  <option value="" selected>Delivered</option>
+                  <option value="">Processing</option>
+                  <option value="">Pending</option>
+                  <option value="">Canceled</option>
+                </select>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="printer"></i>
+                  <i class="invoice__action" data-lucide="zoom-in"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="invoice no" class="bold-700">10662</td>
+              <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+              <td data-cell="customer">shashank phatkure</td>
+              <td data-cell="method" class="bold-700">Cash</td>
+              <td data-cell="amount" class="bold-700">$602.40</td>
+              <td data-cell="status">
+                <div class="table-status canceled">Canceled</div>
+              </td>
+              <td data-cell="action">
+                <select name="actions" id="">
+                  <option value="">Delivered</option>
+                  <option value="">Processing</option>
+                  <option value="">Pending</option>
+                  <option value="" selected>Canceled</option>
+                </select>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="printer"></i>
+                  <i class="invoice__action" data-lucide="zoom-in"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="invoice no" class="bold-700">10662</td>
+              <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+              <td data-cell="customer">shashank phatkure</td>
+              <td data-cell="method" class="bold-700">Cash</td>
+              <td data-cell="amount" class="bold-700">$602.40</td>
+              <td data-cell="status">
+                <div class="table-status processing">Processing</div>
+              </td>
+              <td data-cell="action">
+                <select name="actions" id="">
+                  <option value="">Delivered</option>
+                  <option value="" selected>Processing</option>
+                  <option value="">Pending</option>
+                  <option value="">Canceled</option>
+                </select>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="printer"></i>
+                  <i class="invoice__action" data-lucide="zoom-in"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="invoice no" class="bold-700">10662</td>
+              <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+              <td data-cell="customer">shashank phatkure</td>
+              <td data-cell="method" class="bold-700">Cash</td>
+              <td data-cell="amount" class="bold-700">$602.40</td>
+              <td data-cell="status">
+                <div class="table-status pending">Pending</div>
+              </td>
+              <td data-cell="action">
+                <select name="actions" id="">
+                  <option value="">Delivered</option>
+                  <option value="">Processing</option>
+                  <option value="" selected>Pending</option>
+                  <option value="">Canceled</option>
+                </select>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action fade" data-lucide="printer"></i>
+                  <i class="invoice__action" data-lucide="zoom-in"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="invoice no" class="bold-700">10662</td>
+              <td data-cell="time">Jan 18, 2024 3:43 PM</td>
+              <td data-cell="customer">shashank phatkure</td>
+              <td data-cell="method" class="bold-700">Cash</td>
+              <td data-cell="amount" class="bold-700">$602.40</td>
+              <td data-cell="status">
+                <div class="table-status pending">Pending</div>
+              </td>
+              <td data-cell="action">
+                <select name="actions" id="">
+                  <option value="">Delivered</option>
+                  <option value="">Processing</option>
+                  <option value="" selected>Pending</option>
+                  <option value="">Canceled</option>
+                </select>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="printer"></i>
+                  <i class="invoice__action" data-lucide="zoom-in"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="8">
+                <div class="table-footer">
+                  <div>SHOWING 1-8 OF 668</div>
+                  <div class="pagination">
+                    <div class="pagination__child">
+                      <i
+                        class="pagination__icon"
+                        data-lucide="chevron-left"
+                      ></i>
+                    </div>
+                    <div class="pagination__child active">1</div>
+                    <div class="pagination__child">2</div>
+                    <div class="pagination__child">3</div>
+                    <div class="pagination__child">4</div>
+                    <div class="pagination__child">5</div>
+                    <div class="pagination__child">...</div>
+                    <div class="pagination__child">84</div>
+                    <div class="pagination__child">
+                      <i
+                        class="pagination__icon"
+                        data-lucide="chevron-right"
+                      ></i>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </td>
-          </tr>
-        </table>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div id="overlay"></div>
     </main>

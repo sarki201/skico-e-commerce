@@ -91,20 +91,29 @@ h5 {
     color: var(--pri-color-2);
 }
 
+.margin-container {
+    margin-inline: auto;
+    max-width: 1325px;
+    height: 100%;
+}
+
 /* ==========HEADER========== */
 
 .header {
     height: 65px;
-    display: flex;
     position: fixed;
     top: 0;
-    justify-content: space-between;
-    align-items: center;
     padding-inline: 20px;
     background-color: var(--bg-sec-color);
     color: whitesmoke;
     z-index: 4;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header>.margin-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav {
@@ -154,8 +163,6 @@ h5 {
 .aside.active {
     display: none;
 }
-
-
 
 .logo {
     display: flex;
@@ -277,8 +284,10 @@ h5 {
 .main {
     background-color: var(--bg-color);
     color: var(--text-color-gray-white);
-    padding: 25px;
-    padding-top: 85px;
+    padding: 1.5rem;
+    height: calc(100vh - 65px);
+    overflow-y: auto;
+    margin-top: 65px;
 }
 
 
@@ -1466,6 +1475,56 @@ p.summary__total {
     height: 1rem;
 }
 
+/* =======STAFF PAGE======== */
+
+.our-staff__actions {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
+    gap: 1.5rem;
+}
+
+.our-staff__actions__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    height: 45px;
+}
+
+@container ordersActions (max-width: 600px) {
+    .our-staff__actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+.table-img.rounded {
+    border-radius: 50%;
+}
+
+/* =========SETTINGS PAGE========== */
+.settings__cont {
+    max-width: 850px;
+    margin-inline: auto;
+}
+
+.form__items__label {
+    font-size: 0.8625rem;
+    color: var(--text-color-gray);
+}
+
+.settings__cont>.form__items {
+    align-items: center;
+}
+
+.settings__cont__btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.settings__cont__btn>button {
+    padding-inline: 30px;
+    height: 45px;
+}
 
 /* =====SWITCH BUTTON===== */
 .switch {

@@ -54,7 +54,7 @@
             <i class="aside__icon" data-lucide="users"></i>Customers</a
           >
         </li>
-        <li class="aside-nav__li active">
+        <li class="aside-nav__li">
           <a href="orders.html">
             <i class="aside__icon" data-lucide="compass"></i>Orders</a
           >
@@ -64,7 +64,7 @@
             <i class="aside__icon" data-lucide="user"></i>Our Staff</a
           >
         </li>
-        <li class="aside-nav__li">
+        <li class="aside-nav__li active">
           <a href="settings.html">
             <i class="aside__icon" data-lucide="settings"></i>Settings</a
           >
@@ -110,103 +110,113 @@
       <div class="margin-container">
         <h2 class="content-head">Orders</h2>
         <section class="invoice__cont">
-          <article class="invoice__cont-head">
-            <div class="invoice__cont-head-first-child">
-              <h3>INVOICE</h3>
-              <p class="status">
-                STATUS <span class="table-status processing">Processing</span>
-              </p>
+          <article class="settings__cont">
+            <div class="form__items">
+              <label class="form__items__label bold-700" for=""
+                >Number of images per product</label
+              >
+              <input
+                type="number"
+                name=""
+                id=""
+                placeholder="Number of images per product"
+              />
             </div>
-            <div class="invoice__cont-head-second-child">
-              <h3>
-                <i class="invoice__head__icon" data-lucide="shopping-bag"></i>
-                SKICO
-              </h3>
-              <p class="normal_text">
-                59 Station Rd, Purls Bridge, United Kingdom
-              </p>
-              <p class="normal_text">019579034</p>
-              <p class="normal_text">skico-e-commerce@gmail.com</p>
-              <p class="normal_text">skico-e-commerce.com</p>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for=""
+                >Default Currency</label
+              >
+              <select name="" id="">
+                <option value="" hidden>Currency</option>
+                <option value="">${USD}</option>
+                <option value="">(Naira)</option>
+                <option value="">(Rupee)</option>
+              </select>
+            </div>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for=""
+                >Default Timezone</label
+              >
+              <select name="" id="">
+                <option value="" hidden>Europe/London (GMT+00:00)</option>
+                <option value="">Europe/London (GMT+00:00)</option>
+                <option value="">Europe/London (GMT+00:00)</option>
+              </select>
+            </div>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for=""
+                >Default date format</label
+              >
+              <select name="" id="">
+                <option value="">MM/DD/YYYY</option>
+                <option value="">DD/MM/YYYY</option>
+                <option value="">YYYY/MM/DD</option>
+              </select>
+            </div>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for=""
+                >Reciept size width</label
+              >
+              <select name="" id="">
+                <option value="">57 mm</option>
+                <option value="">80 mm</option>
+                <option value="">3 1/8"</option>
+                <option value="">2 1/4"</option>
+                <option value="">A4</option>
+              </select>
+            </div>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for=""
+                >Shop name</label
+              >
+              <input
+                type="text"
+                placeholder="Shop name"
+                value="skico-e-commerce"
+              />
+            </div>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for=""
+                >Company name</label
+              >
+              <input type="text" placeholder="company name" />
+            </div>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for=""
+                >Vat number</label
+              >
+              <input type="number" placeholder="VAT number" value="12345" />
+            </div>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for="">Address</label>
+              <input
+                type="text"
+                placeholder="address"
+                value="59 Station Rd, Purls Bridge, United Kingdom"
+              />
+            </div>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for=""
+                >Postal Code</label
+              >
+              <input type="number" placeholder="Postal code" value="123432" />
+            </div>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for="">Contact</label>
+              <input type="text" placeholder="Contact" />
+            </div>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for="">Email</label>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="form__items">
+              <label class="form__items__label bold-700" for="">Website</label>
+              <input type="url" placeholder="url" />
+            </div>
+            <div class="settings__cont__btn">
+              <button class="btn-generic">Update</button>
             </div>
           </article>
-          <article class="invoice__cont__mid">
-            <div class="invoice__cont__mid-first-child">
-              <h4 class="invoice__cont__mid__head">DATE</h4>
-              <p class="normal_text">Feb 4, 2024</p>
-            </div>
-            <div class="invoice__cont__mid-second-child">
-              <h4 class="invoice__cont__mid__head">INVOICE NO</h4>
-              <p class="normal_text">#10676</p>
-            </div>
-            <div class="invoice__cont__mid-third-child">
-              <h4 class="invoice__cont__mid__head">INVOICE TO</h4>
-              <p class="normal_text">erf wer</p>
-              <p class="normal_text">wewe@gmail.com 232323</p>
-              <p class="normal_text">qwrdf</p>
-              <p class="normal_text">NewYork, United States, 10001</p>
-            </div>
-          </article>
-          <article class="grid-table__cont">
-            <div class="grid-table">
-              <div class="grid-table__row">
-                <div class="grid-table__head">SR</div>
-                <div class="grid-table__head">PRODUCT TITLE</div>
-                <div class="grid-table__head text-center">QUANTITY</div>
-                <div class="grid-table__head text-center">UNIT PRICE</div>
-                <div class="grid-table__head text-left">TOTAL PRICE</div>
-              </div>
-              <div class="grid-table__row">
-                <div class="">1</div>
-                <div class="bold-600">Green Cauliflower-Red</div>
-                <div class="bold-600 text-center">1</div>
-                <div class="text-center bold-600">$94.12</div>
-                <div class="text-left bold-600 grid-table__total">$94.12</div>
-              </div>
-              <div class="grid-table__row">
-                <div class="">2</div>
-                <div class="bold-600">Green Cauliflower-Red</div>
-                <div class="bold-600 text-center">1</div>
-                <div class="text-center bold-600">$94.12</div>
-                <div class="text-left bold-600 grid-table__total">$94.12</div>
-              </div>
-              <div class="grid-table__row">
-                <div class="">3</div>
-                <div class="bold-600">Green Cauliflower-Red</div>
-                <div class="bold-600 text-center">1</div>
-                <div class="text-center bold-600">$94.12</div>
-                <div class="text-left bold-600 grid-table__total">$94.12</div>
-              </div>
-            </div>
-          </article>
-          <article class="invoice__cont__summary">
-            <div>
-              <h4 class="invoice__cont__mid__head">PAYMENT METHOD</h4>
-              <p class="summary">Cash</p>
-            </div>
-            <div>
-              <h4 class="invoice__cont__mid__head">SHIPPING COST</h4>
-              <p class="summary">$20.00</p>
-            </div>
-            <div>
-              <h4 class="invoice__cont__mid__head">DISCOUNT</h4>
-              <p class="summary">$0.00</p>
-            </div>
-            <div>
-              <h4 class="invoice__cont__mid__head">TOTAL AMOUNT</h4>
-              <p class="summary__total">$412.77</p>
-            </div>
-          </article>
-        </section>
-        <section class="footer-btn__cont">
-          <button class="footer-btn btn-generic">
-            Download Invoice
-            <i class="footer-btn__icon" data-lucide="download-cloud"></i>
-          </button>
-          <button class="footer-btn btn-generic">
-            Print Invoice
-            <i class="footer-btn__icon" data-lucide="printer"></i>
-          </button>
         </section>
       </div>
       <div id="overlay"></div>

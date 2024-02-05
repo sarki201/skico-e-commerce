@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKICO Admin</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <header id="header" class="header container coll">
+      <div class="margin-container">
+        <i id="aside-coll" class="header__icon" data-lucide="menu"></i>
+        <ul class="nav">
+          <li class="nav__li">ENGLISH</li>
+          <li class="nav__li">
+            <i id="theme-toggle" class="header__icon" data-lucide="sun"></i>
+          </li>
+          <li class="nav__li">
+            <i
+              id="notification-dropdown"
+              class="header__icon"
+              data-lucide="bell"
+            ></i>
+          </li>
+          <li class="nav__li nav__avatar">A</li>
+        </ul>
+      </div>
+    </header>
+    <aside class="aside" id="aside">
+      <h1 class="logo">
+        <i class="logo-icon" data-lucide="shopping-bag"></i>SKICO
+      </h1>
+      <ul class="aside-nav">
+        <li class="aside-nav__li">
+          <a href="/admin/"
+            ><i class="aside__icon" data-lucide="layout-dashboard"></i
+            >Dashboard</a
+          >
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="layout-list"></i>Catalog
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="attributes.html">Attributes</a></li>
+            <li><a href="coupons.html">Coupon</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li">
+          <a href="customers.html">
+            <i class="aside__icon" data-lucide="users"></i>Customers</a
+          >
+        </li>
+        <li class="aside-nav__li">
+          <a href="orders.html">
+            <i class="aside__icon" data-lucide="compass"></i>Orders</a
+          >
+        </li>
+        <li class="aside-nav__li active">
+          <a href="our_staff.html">
+            <i class="aside__icon" data-lucide="user"></i>Our Staff</a
+          >
+        </li>
+        <li class="aside-nav__li">
+          <a href="settings.html">
+            <i class="aside__icon" data-lucide="settings"></i>Settings</a
+          >
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="globe"></i>International
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="currencies.html">Currencies</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="disc-2"></i>Online Store
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="/">View Store</a></li>
+            <li><a href="store_customization.html">Store Customization</a></li>
+            <li><a href="store_settings.html">Store Settings</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="library"></i>Pages
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="404.html">404</a></li>
+            <li><a href="comming_soon.html">Coming Soon</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="btn aside__btn">
+        <i class="logout-icon" data-lucide="log-out"></i>Log Out
+      </button>
+      <div id="aside-overlay"></div>
+    </aside>
+    <main id="main" class="main container coll">
+      <div class="margin-container">
+        <h2 class="content-head">All Staff</h2>
+        <section class="orders__actions">
+          <div class="our-staff__actions">
+            <input
+              class="products__actions-input"
+              type="text"
+              name=""
+              id=""
+              placeholder="Search Product"
+            />
+            <select class="products__actions-select" name="" id="">
+              <option value="" hidden>Staff Role</option>
+              <option value="">Admin</option>
+              <option value="">Cashier</option>
+              <option value="">Super Admin</option>
+            </select>
+            <button
+              data-modal-target="#add-staff-modal"
+              class="btn-generic our-staff__actions__btn"
+            >
+              <i class="products__action-icon sm" data-lucide="plus"></i> Add
+              Staff
+            </button>
+            <div class="products__actions-filter-reset">
+              <button class="filter">Filter</button>
+              <button class="reset">Reset</button>
+            </div>
+          </div>
+        </section>
+        <section class="table-section">
+          <table>
+            <tr>
+              <th>NAME</th>
+              <th>EMAIL</th>
+              <th>CONTACT</th>
+              <th>DATE JOINED</th>
+              <th>ROLE</th>
+              <th>STATUS</th>
+              <th>PUBLISHED</th>
+              <th>ACTIONS</th>
+            </tr>
+            <tr>
+              <td data-cell="Name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img rounded"
+                    src="../pictures/people/1.png"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />Marion V. Parker
+                </div>
+              </td>
+              <td data-cell="email">marion@gmail.com</td>
+              <td data-cell="contact">713-675-8813</td>
+              <td data-cell="date joined">Feb 2, 2024</td>
+              <td data-cell="role" class="bold-700">Admin</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Active</div>
+              </td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="square-pen"></i
+                  ><i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img rounded"
+                    src="../pictures/people/1.png"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />Marion V. Parker
+                </div>
+              </td>
+              <td data-cell="email">marion@gmail.com</td>
+              <td data-cell="contact">713-675-8813</td>
+              <td data-cell="date joined">Feb 2, 2024</td>
+              <td data-cell="role" class="bold-700">Admin</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Active</div>
+              </td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="square-pen"></i
+                  ><i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img rounded"
+                    src="../pictures/people/1.png"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />Marion V. Parker
+                </div>
+              </td>
+              <td data-cell="email">marion@gmail.com</td>
+              <td data-cell="contact">713-675-8813</td>
+              <td data-cell="date joined">Feb 2, 2024</td>
+              <td data-cell="role" class="bold-700">Admin</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Active</div>
+              </td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="square-pen"></i
+                  ><i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img rounded"
+                    src="../pictures/people/1.png"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />Marion V. Parker
+                </div>
+              </td>
+              <td data-cell="email">marion@gmail.com</td>
+              <td data-cell="contact">713-675-8813</td>
+              <td data-cell="date joined">Feb 2, 2024</td>
+              <td data-cell="role" class="bold-700">Admin</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Active</div>
+              </td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="square-pen"></i
+                  ><i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img rounded"
+                    src="../pictures/people/1.png"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />Marion V. Parker
+                </div>
+              </td>
+              <td data-cell="email">marion@gmail.com</td>
+              <td data-cell="contact">713-675-8813</td>
+              <td data-cell="date joined">Feb 2, 2024</td>
+              <td data-cell="role" class="bold-700">Admin</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Active</div>
+              </td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="square-pen"></i
+                  ><i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img rounded"
+                    src="../pictures/people/1.png"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />Marion V. Parker
+                </div>
+              </td>
+              <td data-cell="email">marion@gmail.com</td>
+              <td data-cell="contact">713-675-8813</td>
+              <td data-cell="date joined">Feb 2, 2024</td>
+              <td data-cell="role" class="bold-700">Admin</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Active</div>
+              </td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="square-pen"></i
+                  ><i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img rounded"
+                    src="../pictures/people/1.png"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />Marion V. Parker
+                </div>
+              </td>
+              <td data-cell="email">marion@gmail.com</td>
+              <td data-cell="contact">713-675-8813</td>
+              <td data-cell="date joined">Feb 2, 2024</td>
+              <td data-cell="role" class="bold-700">Admin</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Active</div>
+              </td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="square-pen"></i
+                  ><i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="Name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img rounded"
+                    src="../pictures/people/1.png"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />Marion V. Parker
+                </div>
+              </td>
+              <td data-cell="email">marion@gmail.com</td>
+              <td data-cell="contact">713-675-8813</td>
+              <td data-cell="date joined">Feb 2, 2024</td>
+              <td data-cell="role" class="bold-700">Admin</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Active</div>
+              </td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <i class="invoice__action" data-lucide="square-pen"></i
+                  ><i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="10">
+                <div class="table-footer">
+                  <div>SHOWING 1-8 OF 8</div>
+                  <div class="pagination">
+                    <div class="pagination__child">
+                      <i
+                        class="pagination__icon"
+                        data-lucide="chevron-left"
+                      ></i>
+                    </div>
+                    <div class="pagination__child active">1</div>
+                    <div class="pagination__child">
+                      <i
+                        class="pagination__icon"
+                        data-lucide="chevron-right"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section
+          id="add-staff-modal"
+          class="add-category__modal page-modal modal"
+        >
+          <form action="#" method="post">
+            <div class="add-product__header">
+              <div class="add-product__heading">
+                <h2>Add Category</h2>
+                <h5>
+                  Add your Product category and necessary information from here
+                </h5>
+              </div>
+              <div class="add-product__nav">
+                <button class="x-close" data-close-button>&times;</button>
+              </div>
+            </div>
+            <div class="add-product__info">
+              <div class="form__items">
+                <label for="">Picture</label>
+                <div>
+                  <label
+                    for="staff-img"
+                    id="product-image"
+                    class="product-drag-and-drop__cont"
+                  >
+                    <input
+                      type="file"
+                      accept="Image/*"
+                      id="staff-img"
+                      multiple
+                      hidden
+                    />
+                    <i class="product-dd-img" data-lucide="upload-cloud"></i>
+                    <h5>Drag your images here</h5>
+                    <p>
+                      (Only *.jpeg, *.webp and *.png images will be accepted)
+                    </p>
+                  </label>
+                  <div id="img-view" class="add-product__images"></div>
+                </div>
+              </div>
+              <div class="form__items">
+                <label for="staff-name">Name</label>
+                <div>
+                  <input type="text" id="staff-name" placeholder="Saff Name" />
+                  <p class="form-validator-err">This is required!</p>
+                </div>
+              </div>
+              <div class="form__items">
+                <label for="staff-email">Email</label>
+                <div>
+                  <input type="email" id="staff-email" placeholder="Email" />
+                </div>
+              </div>
+              <div class="form__items">
+                <label for="staff-password">Password</label>
+                <div>
+                  <input
+                    type="text"
+                    id="staff-password"
+                    placeholder="Password"
+                  />
+                  <p class="form-validator-err">This is required!</p>
+                </div>
+              </div>
+              <div class="form__items">
+                <label for="staff-contact">Contact</label>
+                <div>
+                  <input type="tel" id="staff-contact" placeholder="Contact" />
+                </div>
+              </div>
+              <div class="form__items">
+                <label for="date-joined">Date Joined</label>
+                <div>
+                  <input type="date" id="date-joined" />
+                </div>
+              </div>
+              <div class="form__items">
+                <label for="staff-role">Role</label>
+                <div>
+                  <input type="text" id="staff-role" placeholder="Staff role" />
+                </div>
+              </div>
+            </div>
+            <div class="add-product__footer">
+              <button class="close" data-close-button>Cancel</button>
+              <button class="btn-generic">Add Category</button>
+            </div>
+          </form>
+        </section>
+      </div>
+      <div id="overlay"></div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
