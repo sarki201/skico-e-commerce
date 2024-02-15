@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKICO Admin</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <header id="header" class="header container coll">
+      <div class="margin-container">
+        <i id="aside-coll" class="header__icon" data-lucide="menu"></i>
+        <ul class="nav">
+          <li class="nav__li">ENGLISH</li>
+          <li class="nav__li">
+            <i id="theme-toggle" class="header__icon" data-lucide="sun"></i>
+          </li>
+          <li class="nav__li">
+            <i
+              id="notification-dropdown"
+              class="header__icon"
+              data-lucide="bell"
+            ></i>
+          </li>
+          <li class="nav__li nav__avatar">A</li>
+        </ul>
+      </div>
+    </header>
+    <aside class="aside" id="aside">
+      <h1 class="logo">
+        <i class="logo-icon" data-lucide="shopping-bag"></i>SKICO
+      </h1>
+      <ul class="aside-nav">
+        <li class="aside-nav__li">
+          <a href="/admin/"
+            ><i class="aside__icon" data-lucide="layout-dashboard"></i
+            >Dashboard</a
+          >
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn active">
+          <i class="aside__icon" data-lucide="layout-list"></i>Catalog
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="/admin/products.html">Products</a></li>
+            <li><a href="/admin/categories.html">Categories</a></li>
+            <li><a href="/admin/attributes.html">Attributes</a></li>
+            <li><a href="/admin/coupons.html">Coupon</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li">
+          <a href="/admin/customers.html">
+            <i class="aside__icon" data-lucide="users"></i>Customers</a
+          >
+        </li>
+        <li class="aside-nav__li">
+          <a href="/admin/orders.html">
+            <i class="aside__icon" data-lucide="compass"></i>Orders</a
+          >
+        </li>
+        <li class="aside-nav__li">
+          <a href="/admin/our_staff.html">
+            <i class="aside__icon" data-lucide="user"></i>Our Staff</a
+          >
+        </li>
+        <li class="aside-nav__li">
+          <a href="/admin/settings.html">
+            <i class="aside__icon" data-lucide="settings"></i>Settings</a
+          >
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="globe"></i>International
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="/admin/languages.html">Languages</a></li>
+            <li><a href="/admin/currencies.html">Currencies</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="disc-2"></i>Online Store
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="/">View Store</a></li>
+            <li><a href="store_customization.html">Store Customization</a></li>
+            <li><a href="store_/admin/settings.html">Store Settings</a></li>
+          </ul>
+        </li>
+        <li class="aside-nav__li aside-dropdown-btn">
+          <i class="aside__icon" data-lucide="library"></i>Pages
+          <i class="icon-more" data-lucide="chevron-right"></i>
+        </li>
+        <li class="aside-nav__li-dropdown aside-dropdown aside-display">
+          <ul>
+            <li><a href="404.html">404</a></li>
+            <li><a href="comming_soon.html">Coming Soon</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="btn aside__btn">
+        <i class="logout-icon" data-lucide="log-out"></i>Log Out
+      </button>
+      <div id="aside-overlay"></div>
+    </aside>
+    <main id="main" class="main container coll">
+      <div class="margin-container">
+        <h2 class="content-head">Coupons</h2>
+        <section class="products__actions">
+          <div class="products__actions-div">
+            <button class="products__action export">
+              <i class="products__action-icon" data-lucide="upload"></i>Export
+            </button>
+            <button class="products__action import">
+              <i class="products__action-icon" data-lucide="download"></i>Import
+            </button>
+          </div>
+          <div class="products__actions-div">
+            <button class="products__action bulk-action">
+              <i class="products__action-icon sm" data-lucide="square-pen"></i>
+              Bulk Action
+            </button>
+            <button class="products__action delete">
+              <i class="products__action-icon sm" data-lucide="trash-2"></i>
+              Delete
+            </button>
+            <button class="products__action add-product">
+              <i class="products__action-icon sm" data-lucide="plus"></i> Add
+              Coupon
+            </button>
+          </div>
+        </section>
+        <section class="products__actions products__actions-sec categories-sec">
+          <input
+            class="products__actions-input"
+            type="text"
+            name=""
+            id=""
+            placeholder="Search Category"
+          />
+          <div class="products__actions-filter-reset">
+            <button class="filter">Filter</button>
+            <button class="reset">Reset</button>
+          </div>
+        </section>
+        <section class="table-section">
+          <table>
+            <tr>
+              <th><input type="checkbox" /></th>
+              <th>CAMPAIGN NAME</th>
+              <th>CODE</th>
+              <th>DISCOUNT</th>
+              <th>PUBLISHED</th>
+              <th>START DATE</th>
+              <th>END DATE</th>
+              <th>STATUS</th>
+              <th>ACTIONS</th>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td data-cell="campaign name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img"
+                    src="../pictures/products/f1.jpg"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />
+                  Summer Gift Voucher
+                </div>
+              </td>
+              <td data-cell="code">SUMMER23</td>
+              <td data-cell="discount">10%</td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td data-cell="start date">Jan 22, 2024</td>
+              <td data-cell="end date">Apr 20, 2024</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Active</div>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <a href="/admin/sub_category.html"
+                    ><i class="invoice__action" data-lucide="zoom-in"></i
+                  ></a>
+                  <i class="invoice__action" data-lucide="square-pen"></i>
+                  <i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td data-cell="campaign name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img"
+                    src="../pictures/products/f1.jpg"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />
+                  Summer Gift Voucher
+                </div>
+              </td>
+              <td data-cell="code">SUMMER23</td>
+              <td data-cell="discount">10%</td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td data-cell="start date">Jan 22, 2024</td>
+              <td data-cell="end date">Apr 20, 2024</td>
+              <td data-cell="status">
+                <div class="table-status canceled">Expired</div>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <a href="/admin/sub_category.html"
+                    ><i class="invoice__action" data-lucide="zoom-in"></i
+                  ></a>
+                  <i class="invoice__action" data-lucide="square-pen"></i>
+                  <i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td data-cell="campaign name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img"
+                    src="../pictures/products/f1.jpg"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />
+                  Summer Gift Voucher
+                </div>
+              </td>
+              <td data-cell="code">SUMMER23</td>
+              <td data-cell="discount">10%</td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td data-cell="start date">Jan 22, 2024</td>
+              <td data-cell="end date">Apr 20, 2024</td>
+              <td data-cell="status">
+                <div class="table-status canceled">Expired</div>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <a href="/admin/sub_category.html"
+                    ><i class="invoice__action" data-lucide="zoom-in"></i
+                  ></a>
+                  <i class="invoice__action" data-lucide="square-pen"></i>
+                  <i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td data-cell="campaign name">
+                <div class="flex-align-center">
+                  <img
+                    class="table-img"
+                    src="../pictures/products/f1.jpg"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                    loading="lazy"
+                  />
+                  Summer Gift Voucher
+                </div>
+              </td>
+              <td data-cell="code">SUMMER23</td>
+              <td data-cell="discount">10%</td>
+              <td data-cell="published">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td data-cell="start date">Jan 22, 2024</td>
+              <td data-cell="end date">Apr 20, 2024</td>
+              <td data-cell="status">
+                <div class="table-status delivered">Active</div>
+              </td>
+              <td>
+                <div class="invoice__actions">
+                  <a href="/admin/sub_category.html"
+                    ><i class="invoice__action" data-lucide="zoom-in"></i
+                  ></a>
+                  <i class="invoice__action" data-lucide="square-pen"></i>
+                  <i class="invoice__action delete" data-lucide="trash-2"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9">
+                <div class="table-footer">
+                  <div>SHOWING 1-4 OF 4</div>
+                  <div class="pagination">
+                    <div class="pagination__child">
+                      <i
+                        class="pagination__icon"
+                        data-lucide="chevron-left"
+                      ></i>
+                    </div>
+                    <div class="pagination__child active">1</div>
+                    <div class="pagination__child">
+                      <i
+                        class="pagination__icon"
+                        data-lucide="chevron-right"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </main>
+    <div id="overlay"></div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
