@@ -9,7 +9,7 @@
     --bg-sec-color2: #374151;
     --pri-color: #ff7a41;
     --pri-color-faded: #9f4f2c;
-    --pri-color-2: rgb(197, 92, 53);
+    --pri-color-2: #c55c35;
     --text-color-gray: #9ca3af;
     --text-color-gray-2: #656a71;
     --border-color-gray-transparent: rgb(156, 163, 175, 0.5);
@@ -181,7 +181,7 @@ h5 {
 }
 
 .notifications-modal.modal.active::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 247, 247, 0.5);
     border-radius: 5px;
 }
 
@@ -389,6 +389,9 @@ p.notification__details {
     margin-top: 65px;
 }
 
+/* .main>.margin-container>*:last-child {
+    margin-bottom: 60px !important;
+} */
 
 
 .large-cards {
