@@ -263,20 +263,17 @@ p.notification__details {
     display: none;
 }
 
+
+
 .logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.6rem;
-    color: whitesmoke;
+    margin-top: 10px;
+    width: 100px;
 }
 
-.logo-icon {
-    color: var(--pri-color-2);
-    margin-right: 5px;
-}
+
 
 .aside-nav {
-    margin-block: 30px 70px;
+    margin-block: 15px 70px;
 }
 
 .aside-nav__li {
