@@ -1790,6 +1790,8 @@ input:checked+.slider:before {
         display: none;
         overflow: auto;
         top: 65px;
+        bottom: initial;
+        height: calc(100vh - 65px);
         box-shadow: 50px 50px 50px 500px rgba(0, 0, 0, 0.5);
         transition: 5s ease;
     }
