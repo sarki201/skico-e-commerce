@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKICO</title>
+    <link rel="stylesheet" href="css/temp_style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        background-color: #d4d4d4;
+      }
+      .maint {
+        max-width: 850px;
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* overflow-y: auto; */
+      }
+
+      .maint__h1 {
+        text-align: center;
+        font-size: 1.75rem;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        margin-top: -1.2rem;
+        color: #333;
+      }
+      .maint__pic {
+        width: 95%;
+        display: block;
+        margin-inline: auto;
+        object-fit: cover;
+        aspect-ratio: 4/3;
+      }
+
+      .btn-generic {
+        display: block;
+        margin-inline: auto;
+        margin-top: 0.5rem;
+        width: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="maint">
+      <img
+        class="maint__pic"
+        src="pictures/illustrations/illustration_maintenance.png"
+        alt=""
+      />
+      <h1 class="maint__h1">Oopsie! This page is getting a makeover!</h1>
+      <a href="/" class="btn-generic">Home Page</a>
+    </article>
+  </body>
+</html>

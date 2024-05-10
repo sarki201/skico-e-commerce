@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKICO</title>
+    <link rel="stylesheet" href="css/temp_style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+      body {
+        background-color: #d4d4d4;
+      }
+      .maint {
+        max-width: 1000px;
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .maint__h1 {
+        text-align: center;
+        font-size: 1.75rem;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        margin-top: -0.5rem;
+        color: #333;
+      }
+      .maint__pic {
+        max-width: 600px;
+        display: block;
+        margin-inline: auto;
+        width: 100%;
+        /* background-color: red; */
+        object-fit: cover;
+        aspect-ratio: 1/1;
+      }
+      .btn-generic {
+        display: block;
+        margin-inline: auto;
+        margin-top: 0.5rem;
+        width: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="maint">
+      <img
+        class="maint__pic"
+        src="pictures/illustrations/illustration_404.png"
+        alt=""
+      />
+      <h1 class="maint__h1">Uh-oh! Page's on a permanent vacay!</h1>
+      <a href="/" class="btn-generic">Home Page</a>
+    </article>
+  </body>
+</html>
