@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SKICO</title>
-    <link rel="stylesheet" href="css/temp_style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
@@ -46,10 +46,8 @@
           >
             <a> <i class="header__icon" data-lucide="shopping-cart"></i></a>
           </li>
-          <li>
-            <a href="maintenance.html">
-              <i class="header__icon" data-lucide="user"></i
-            ></a>
+          <li data-modal-target="#login-modal">
+            <a> <i class="header__icon" data-lucide="user"></i></a>
           </li>
         </ul>
       </nav>
@@ -1126,7 +1124,7 @@
                 >
               </div>
             </div>
-            <div id="quick-view-1" class="modal quick-view">
+            <div id="quick-view-1" class="modal quick-view large-pop-up">
               <div>
                 <img
                   class="quick-view__img"
@@ -2014,6 +2012,90 @@
         </div>
       </div>
     </section>
+    <section id="login-modal" class="login-modal modal large-pop-up">
+      <div class="login-view login-signup active">
+        <h1 class="login__h1">Login</h1>
+        <p class="login__p">Login with your email and password</p>
+        <label for="email">
+          <span class="login__span">Email</span>
+          <div class="input-cont">
+            <input id="email" type="email" placeholder="Email" />
+            <i class="input__icon" data-lucide="mail"></i>
+          </div>
+        </label>
+        <label for="password">
+          <span class="login__span">Password</span>
+          <div class="input-cont">
+            <input id="password" type="password" placeholder="Password" />
+            <i class="input__icon" data-lucide="lock"></i>
+            <i class="pass__icon" data-lucide="eye"></i>
+          </div>
+        </label>
+        <p class="forgot-pass">Forgot password?</p>
+        <button class="btn-generic login__btn">Login</button>
+
+        <h2 class="login__h2">OR</h2>
+        <div class="login-methods">
+          <a class="login-method">
+            <img src="pictures/icons/icon-facebook.png" alt="" /> Log in with
+            Facebook
+          </a>
+          <a class="login-method">
+            <img src="pictures/icons/icon-google.png" alt="" />Sign in with
+            Google
+          </a>
+        </div>
+        <p class="login-switch">
+          Don't have an account yet?
+          <span class="login-register-btn">Register</span>
+        </p>
+      </div>
+      <div class="sign-up-view login-signup">
+        <h1 class="login__h1">Sign Up</h1>
+        <p class="login__p">Create an account with email and password</p>
+        <label for="name">
+          <span class="login__span">Name</span>
+          <div class="input-cont">
+            <input id="name" type="text" placeholder="Full Name" />
+            <i class="input__icon" data-lucide="user"></i>
+          </div>
+        </label>
+        <label for="email">
+          <span class="login__span">Email</span>
+          <div class="input-cont">
+            <input id="email" type="email" placeholder="Email" />
+            <i class="input__icon" data-lucide="mail"></i>
+          </div>
+        </label>
+        <label for="password">
+          <span class="login__span">Password</span>
+          <div class="input-cont">
+            <input id="password" type="password" placeholder="Password" />
+            <i class="input__icon" data-lucide="lock"></i>
+            <i class="pass__icon" data-lucide="eye"></i>
+          </div>
+        </label>
+        <button class="btn-generic login__btn">Sign Up</button>
+
+        <h2 class="login__h2">OR</h2>
+        <div class="login-methods">
+          <a class="login-method">
+            <img src="pictures/icons/icon-facebook.png" alt="" /> Log in with
+            Facebook
+          </a>
+          <a class="login-method">
+            <img src="pictures/icons/icon-google.png" alt="" />Sign in with
+            Google
+          </a>
+        </div>
+        <p class="login-switch">
+          Already have an account? <span class="login-register-btn">Login</span>
+        </p>
+      </div>
+      <button class="close-btn-rounded quick-view__close" data-close-button>
+        &times;
+      </button>
+    </section>
     <footer class="footer">
       <section class="bottom-links margin-container">
         <article>
@@ -2147,7 +2229,7 @@
             ></a>
           </li>
           <li>
-            <a href="maintenance.html"
+            <a data-modal-target="#login-modal"
               ><i class="bottom-bar__icon" data-lucide="user"></i
             ></a>
           </li>
@@ -2158,53 +2240,6 @@
     <script>
       lucide.createIcons();
     </script>
-    <script>
-      const openModalButtons = document.querySelectorAll("[data-modal-target]");
-      const closeModalButtons = document.querySelectorAll(
-        "[data-close-button]"
-      );
-      const overlay = document.getElementById("overlay");
-
-      var counter = 1;
-      setInterval(function () {
-        document.getElementById("radio" + counter).checked = true;
-        counter++;
-        if (counter > 4) {
-          counter = 1;
-        }
-      }, 5000);
-
-      openModalButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const modal = document.querySelector(button.dataset.modalTarget);
-          openModal(modal);
-        });
-      });
-
-      overlay.addEventListener("click", () => {
-        const modals = document.querySelectorAll(".modal.active");
-        modals.forEach((modal) => {
-          closeModal(modal);
-        });
-      });
-
-      closeModalButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const modal = button.closest(".modal");
-          closeModal(modal);
-        });
-      });
-
-      const openModal = (modal) => {
-        if (modal == null) return;
-        modal.classList.add("active");
-        overlay.classList.add("active");
-      };
-      const closeModal = (modal) => {
-        if (modal == null) return;
-        modal.classList.remove("active");
-        overlay.classList.remove("active");
-      };
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

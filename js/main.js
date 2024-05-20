@@ -1,54 +1,55 @@
-const bar = document.getElementById('bar');
-const close = document.getElementById('close');
-const nav = document.getElementById('navbar'); 
-const validatorclose = document.getElementById('validator-close');
-const validator = document.getElementById('validator');
-const popUp = document.getElementById('pop-up');
-const popUpClose = document.getElementById('pop-up-close');
+const openModalButtons = document.querySelectorAll("[data-modal-target]");
+const closeModalButtons = document.querySelectorAll("[data-close-button]");
+const overlay = document.getElementById("overlay");
+const loginRegisterBtn = document.querySelectorAll(".login-register-btn");
+const loginRegisterView = document.querySelectorAll(".login-signup");
 
-if (bar) {
-    bar.addEventListener('click', () =>{
-        nav.classList.add('active');
+var counter = 1;
+setInterval(function () {
+  document.getElementById("radio" + counter).checked = true;
+  counter++;
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 5000);
+
+openModalButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
+
+overlay.addEventListener("click", () => {
+  const modals = document.querySelectorAll(".modal.active");
+  modals.forEach((modal) => {
+    closeModal(modal);
+  });
+});
+
+closeModalButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modal = button.closest(".modal");
+    closeModal(modal);
+  });
+});
+
+const openModal = (modal) => {
+  if (modal == null) return;
+  modal.classList.add("active");
+  overlay.classList.add("active");
+};
+const closeModal = (modal) => {
+  if (modal == null) return;
+  modal.classList.remove("active");
+  overlay.classList.remove("active");
+};
+
+
+loginRegisterBtn.forEach(btn => {
+  btn.addEventListener('click', ()=>{
+    loginRegisterView.forEach(view => {
+      view.classList.toggle("active");
     })
-}
-if (close) {
-    close.addEventListener('click', () =>{
-        nav.classList.remove('active');
-    })
-}
-
-if (validatorclose) {
-    validatorclose.addEventListener('click', (e) => {
-        e.preventDefault();
-        validator.style.display = 'none';
-    })
-}
-
-if (popUpClose) {
-    popUpClose.addEventListener('click', (e) => {
-        e.preventDefault();
-        popUp.style.display = 'none';
-    })    
-}
-
-
-
-var x = setInterval(function() {
-    const today = new Date();
-    const tomorrow = new Date(today);
-    tomorrow.setDate(tomorrow.getDate() +1);
-    tomorrow.setHours(0,0,0,0);;
-
-    const distance = tomorrow - today;
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("timer-tomorrow").innerHTML = hours + "h "
-    + minutes + "m " + seconds + "s ";
-      
-  }, 1000);
-
-
-  
-  
+  })
+})
