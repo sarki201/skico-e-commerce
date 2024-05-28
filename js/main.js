@@ -3,6 +3,9 @@ const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
 const loginRegisterBtn = document.querySelectorAll(".login-register-btn");
 const loginRegisterView = document.querySelectorAll(".login-signup");
+const picsClickPrev = document.querySelector(".product__pics .controls .left")
+const picsClickNext = document.querySelector(".product__pics .controls .right")
+const picsToClick = document.querySelectorAll(".product__pics .pics>img")
 
 var counter = 1;
 setInterval(function () {
@@ -53,3 +56,19 @@ loginRegisterBtn.forEach(btn => {
     })
   })
 })
+
+// picsClickNext.addEventListener('click', ()=>{
+//   picsToClick.pop()
+// })
+// picsClickPrev.addEventListener('click', ()=>{
+//   console.log(picsToClick[1].setAttribute("src", "pictures/products/f1.jpg"));
+//   picsToClick.forEach((i ,img) =>{
+//     picsToClick[i - 1].setAttribute('src',img.getAttribute("src"));
+//     console.log(img.getAttribute('src'))
+//     console.log(i)
+//   })
+//   for(let i=0; i<picsToClick.length; i++) {
+//     let att= picsToClick[i - 1].getAttribute("src")
+//     picsToClick[i].setAttribute("src", att);
+//   }
+// })
