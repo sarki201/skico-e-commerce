@@ -1,11 +1,9 @@
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
+const openSectionButtons = document.querySelectorAll("[data-section-target]");
 const overlay = document.getElementById("overlay");
 const loginRegisterBtn = document.querySelectorAll(".login-register-btn");
 const loginRegisterView = document.querySelectorAll(".login-signup");
-const picsClickPrev = document.querySelector(".product__pics .controls .left")
-const picsClickNext = document.querySelector(".product__pics .controls .right")
-const picsToClick = document.querySelectorAll(".product__pics .pics>img")
 
 var counter = 1;
 setInterval(function () {
@@ -57,6 +55,45 @@ loginRegisterBtn.forEach(btn => {
   })
 })
 
+if(openSectionButtons) {
+openSectionButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const section = document.querySelector(button.dataset.sectionTarget);
+    if (section) {
+      const sections = document.querySelectorAll(".profile-section.active");
+      sections.forEach(sec =>{
+        sec.classList.remove('active')
+      })
+      section.classList.add('active')
+    }
+  })
+});
+}
+// const openSection = (section) => {
+//   if (section == null) return;
+//   section.classList.add("active");
+//   const sections = document.querySelectorAll(".profile-section.active");
+//   sections.forEach(section =>{
+//     if(section) {}
+//   })
+// };
+
+// const closeSections = (modal) => {
+//   if (modal == null) return;
+//   modal.classList.remove("active");
+//   overlay.classList.remove("active");
+// };
+
+// overlay.addEventListener("click", () => {
+//   const modals = document.querySelectorAll(".modal.active");
+//   modals.forEach((modal) => {
+//     closeModal(modal);
+//   });
+// });
+
+// const picsClickPrev = document.querySelector(".product__pics .controls .left")
+// const picsClickNext = document.querySelector(".product__pics .controls .right")
+// const picsToClick = document.querySelectorAll(".product__pics .pics>img")
 // picsClickNext.addEventListener('click', ()=>{
 //   picsToClick.pop()
 // })

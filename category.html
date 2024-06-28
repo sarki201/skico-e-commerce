@@ -3,248 +3,1463 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CESMI</title>
+    <title>SKICO</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
   </head>
   <body>
+    <div class="top-details margin-container">
+      <div class="flex-align-center">
+        <i class="top-details__icon" data-lucide="phone-call"></i>
+        <span class="top-details__available"
+          >We are available 24/7, Need help?</span
+        ><span class="top-details__contact-phone"> +2348124406444</span>
+      </div>
+      <div class="top-details__pages flex-align-center">
+        <a href="maintenance.html">About Us</a> |
+        <a href="maintenance.html">Contact Us</a> |
+        <a href="maintenance.html">My Account</a> |
+        <a href="maintenance.html" class="flex-align-center">
+          <i class="top-details__icon" data-lucide="user"></i> Login</a
+        >
+      </div>
+    </div>
     <header class="header">
-      <a href="/"><img src="pictures/logo.png" alt="logo" width="100px" /></a>
-      <form class="nav-search-form" action="" method="get">
-        <input
-          class="nav-searchbar"
-          type="text"
-          name=""
-          id=""
-          placeholder="Search"
-        />
-        <button class="nav-search-btn" type="submit">
-          <i class="uil uil-search"></i>
-        </button>
-      </form>
-      <div>
-        <ul class="nav" id="navbar">
-          <li class="shop-cart">
-            <a href="cart.html"><i class="uil uil-shopping-cart"></i>Cart</a>
+      <nav class="header__nav margin-container">
+        <a href="">
+          <img src="/pictures/logo.png" alt="" class="header__logo"
+        /></a>
+        <div class="header__search-bar">
+          <input type="text" placeholder="Search products here" />
+          <i class="search-bar__logo" data-lucide="search"></i>
+        </div>
+        <ul class="header__ul">
+          <li data-count="2" class="header__icon-li">
+            <a href="maintenance.html">
+              <i class="header__icon" data-lucide="bell"></i
+            ></a>
           </li>
-          <li>
-            <a href="saved.html"><i class="uil uil-bookmark-full"></i>Saved</a>
+          <li
+            data-modal-target="#cart-modal"
+            data-count="10"
+            class="header__icon-li"
+          >
+            <a> <i class="header__icon" data-lucide="shopping-cart"></i></a>
           </li>
-          <li>
-            <a href="login.html"><i class="uil uil-user"></i>Account</a>
+          <li data-modal-target="#login-modal">
+            <a> <i class="header__icon" data-lucide="user"></i></a>
           </li>
-          <a class="close" id="close"><i class="uil uil-times"></i></a>
         </ul>
-      </div>
-      <div class="mobile">
-        <a href="cart.html"><i class="uil uil-shopping-cart"></i></a>
-        <i id="bar" class="uil uil-bars"></i>
-      </div>
-    </header>
-    <main>
-      <section class="for-you container-p1">
-        <h2>Category</h2>
-        <p>Summer Collection New Mordern Design</p>
-        <div class="fe-prod-container">
-          <div class="prod small">
-            <img src="pictures/products/f1.jpg" alt="product" />
-            <div class="des">
-              <span>adidas</span>
-              <h5>Cartoon Astronaut T-Shirt</h5>
-              <div class="star">
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
+      </nav>
+      <section class="bottom-header">
+        <section class="bottom-header__content margin-container">
+          <ul class="bottom-header__ul-first">
+            <li class="bottom-header__li">
+              <span
+                data-modal-target="#categories-modal"
+                class="flex-align-center bottom-header__btn"
+                >Categories
+                <i class="bottom-header__icon" data-lucide="chevron-down"></i>
+              </span>
+              <div id="categories-modal" class="modal categories-modal">
+                <ul>
+                  <li>
+                    <a href="category.html">
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p></a
+                    >
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
               </div>
-              <h4>$78 <span class="act-price">$100</span></h4>
-            </div>
-            <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
-          </div>
-          <div class="prod small">
-            <img src="pictures/products/f2.jpg" alt="product" />
-            <div class="des">
-              <span>adidas</span>
-              <h5>Cartoon Astronaut T-Shirt</h5>
-              <div class="star">
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
+            </li>
+            <li>
+              <a class="bottom-header__btn" href="maintenance.html">About</a>
+            </li>
+            <li>
+              <a class="bottom-header__btn" href="maintenance.html">Contact</a>
+            </li>
+            <li class="bottom-header__li">
+              <span
+                data-modal-target="#pages-modal"
+                class="flex-align-center bottom-header__btn"
+                >Pages
+                <i class="bottom-header__icon" data-lucide="chevron-down"></i>
+              </span>
+              <div id="pages-modal" class="modal pages-modal">
+                <ul>
+                  <li>
+                    <a>
+                      <i class="bottom-header__icon" data-lucide="gift"></i>
+                      <p>Offers</p></a
+                    >
+                  </li>
+                  <li>
+                    <a>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="shopping-bag"
+                      ></i>
+                      <p>Checkout</p></a
+                    >
+                  </li>
+                  <li>
+                    <a>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="message-circle-question"
+                      ></i>
+                      <p>FAQ</p></a
+                    >
+                  </li>
+                  <li>
+                    <a>
+                      <i class="bottom-header__icon" data-lucide="users"></i>
+                      <p>About</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="404.html">
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="circle-alert"
+                      ></i>
+                      <p>404</p></a
+                    >
+                  </li>
+                </ul>
               </div>
-              <h4>$78</h4>
-            </div>
-            <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
-          </div>
-          <div class="prod small">
-            <img src="pictures/products/f3.jpg" alt="product" />
-            <div class="des">
-              <span>adidas</span>
-              <h5>Cartoon Astronaut T-Shirt</h5>
-              <div class="star">
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <h4>$78</h4>
-            </div>
-            <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
-          </div>
-          <div class="prod small">
-            <img src="pictures/products/f4.jpg" alt="product" />
-            <div class="des">
-              <span>adidas</span>
-              <h5>Cartoon Astronaut T-Shirt</h5>
-              <div class="star">
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <h4>$78</h4>
-            </div>
-            <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
-          </div>
-          <div class="prod small">
-            <img src="pictures/products/f5.jpg" alt="product" />
-            <div class="des">
-              <span>adidas</span>
-              <h5>Cartoon Astronaut T-Shirt</h5>
-              <div class="star">
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <h4>$78</h4>
-            </div>
-            <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
-          </div>
-          <div class="prod small">
-            <img src="pictures/products/f6.jpg" alt="product" />
-            <div class="des">
-              <span>adidas</span>
-              <h5>Cartoon Astronaut T-Shirt</h5>
-              <div class="star">
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <h4>$78</h4>
-            </div>
-            <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
-          </div>
-          <div class="prod small">
-            <img src="pictures/products/f7.jpg" alt="product" />
-            <div class="des">
-              <span>adidas</span>
-              <h5>Cartoon Astronaut T-Shirt</h5>
-              <div class="star">
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <h4>$78</h4>
-            </div>
-            <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
-          </div>
-          <div class="prod small">
-            <img src="pictures/products/f8.jpg" alt="product" />
-            <div class="des">
-              <span>adidas</span>
-              <h5>Cartoon Astronaut T-Shirt</h5>
-              <div class="star">
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <h4>$78</h4>
-            </div>
-            <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
-          </div>
-        </div>
+            </li>
+            <li><a class="bottom-header__btn" href="admin/">Go to Admin</a></li>
+          </ul>
+          <ul class="bottom-header__ul-last">
+            <li>ENGLISH</li>
+            <li>Privacy Policy</li>
+            <li>Terms and Conditions</li>
+          </ul>
+        </section>
       </section>
-      <section class="container-m1 container-p1 newsletter">
-        <div class="news-text">
-          <h4>Sign Up For Newsletters</h4>
-          <p>
-            Get E-mail updates about our latest shop and
-            <span>special offers.</span>
-          </p>
-        </div>
-        <div class="form">
-          <input type="text" name="" id="" placeholder="Your email address" />
-          <button class="normal">Sign Up</button>
-        </div>
+      <div id="overlay"></div>
+    </header>
+    <aside id="aside" class="aside modal">
+      <section class="aside__head">
+        <img
+          class="aside__logo"
+          src="pictures/skico logo background.png"
+          alt=""
+        />
+        <button data-close-button class="close-btn-rounded">&times;</button>
+      </section>
+      <section class="aside__section">
+        <h3 class="aside__h3">Categories</h3>
+        <ul class="aside__ul">
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Phones</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Phones</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Accessories</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Ketchen</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Household</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Gatgets</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+        </ul>
+      </section>
+      <section class="aside__section">
+        <h3 class="aside__h3">Admin</h3>
+        <ul class="aside__ul">
+          <li class="aside__li">
+            <a href="admin/">
+              <img class="list__icon" src="favicon.ico" alt="" />
+              <p>Go to Admin</p></a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="aside__section">
+        <h3 class="aside__h3">Pages</h3>
+        <ul class="aside__ul">
+          <li class="aside__li">
+            <i class="bottom-header__icon" data-lucide="gift"></i>
+            <p>Offers</p>
+          </li>
+          <li class="aside__li">
+            <i class="bottom-header__icon" data-lucide="shopping-bag"></i>
+            <p>Checkout</p>
+          </li>
+          <li class="aside__li">
+            <i
+              class="bottom-header__icon"
+              data-lucide="message-circle-question"
+            ></i>
+            <p>FAQ</p>
+          </li>
+          <li class="aside__li">
+            <i class="bottom-header__icon" data-lucide="users"></i>
+            <p>About</p>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <main class="main">
+      <section>
+        <article class="margin-container categories-cont">
+          <h3 class="heading-fs">Categories List</h3>
+          <div class="categories__nav">
+            <div class="categories__nav-l">
+              <i class="categories__nav__icon" data-lucide="chevron-left"></i>
+            </div>
+            <div class="categories__nav-r">
+              <i class="categories__nav__icon" data-lucide="chevron-right"></i>
+            </div>
+          </div>
+          <div class="categories-list">
+            <div class="category-cont">
+              <img
+                class="category-img"
+                src="pictures/icons/icon-beauty.png"
+                alt=""
+              />
+              <p class="category-name">Beauty</p>
+            </div>
+            <div class="category-cont">
+              <img
+                class="category-img"
+                src="pictures/icons/icon-household.png"
+                alt=""
+              />
+              <p class="category-name">Household</p>
+            </div>
+            <div class="category-cont">
+              <img
+                class="category-img"
+                src="pictures/icons/icon-milk.png"
+                alt=""
+              />
+              <p class="category-name">Milk & Dairy</p>
+            </div>
+            <div class="category-cont">
+              <img
+                class="category-img"
+                src="pictures/icons/icon-ketchen.png"
+                alt=""
+              />
+              <p class="category-name">Ketchen</p>
+            </div>
+            <div class="category-cont">
+              <img
+                class="category-img"
+                src="pictures/icons/icon-beauty.png"
+                alt=""
+              />
+              <p class="category-name">Beauty</p>
+            </div>
+            <div class="category-cont">
+              <img
+                class="category-img"
+                src="pictures/icons/icon-household.png"
+                alt=""
+              />
+              <p class="category-name">Household</p>
+            </div>
+            <div class="category-cont">
+              <img
+                class="category-img"
+                src="pictures/icons/icon-milk.png"
+                alt=""
+              />
+              <p class="category-name">Milk & Dairy</p>
+            </div>
+            <div class="category-cont">
+              <img
+                class="category-img"
+                src="pictures/icons/icon-ketchen.png"
+                alt=""
+              />
+              <p class="category-name">Ketchen</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="section4">
+        <article class="margin-container">
+          <h4 class="heading-fs">Men</h4>
+          <div class="product-model__cont">
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/f7.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/f1.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/f2.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/f3.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/f4.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/f5.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/f6.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/f7.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/f8.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/n1.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/n2.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/n3.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/n4.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/n5.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/n6.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/n7.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/n8.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div class="product-model">
+              <div class="product-model__img">
+                <img
+                  data-modal-target="#quick-view-1"
+                  src="pictures/products/f7.jpg"
+                  alt=""
+                />
+                <div class="product-model__cart">
+                  <i
+                    class="product-model__cart-icon"
+                    data-lucide="shopping-cart"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="product-model__h5">
+                Premium T-shirt with stripes and dots
+              </h5>
+              <div class="product-model__rating">
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+                <i class="product-model__star" data-lucide="star"></i>
+              </div>
+              <div class="product-model__price">
+                <h4 class="product-model__h4">$250.00</h4>
+                <h6 class="product-model__h6">$300.00</h6>
+              </div>
+              <div class="product-model__bg">
+                <a href="product.html" class="product-model__btn"
+                  >See Preview</a
+                >
+              </div>
+            </div>
+            <div id="quick-view-1" class="modal quick-view large-pop-up">
+              <div>
+                <img
+                  class="quick-view__img"
+                  src="pictures/products/f1.jpg"
+                  alt=""
+                />
+                <div class="quick-view__details">
+                  <h4 class="quick-view__h4">
+                    Premium T-shirt with stripes and dots
+                  </h4>
+                  <div class="product-model__rating">
+                    <i class="product-model__star" data-lucide="star"></i>
+                    <i class="product-model__star" data-lucide="star"></i>
+                    <i class="product-model__star" data-lucide="star"></i>
+                    <i class="product-model__star" data-lucide="star"></i>
+                    <i class="product-model__star" data-lucide="star"></i>
+                  </div>
+                  <p class="quick-view__p">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nobis possimus, ab adipisci dolorum officia iure corrupti,
+                    delectus necessitatibus facere error voluptatum repudiandae
+                    quam eius rerum...
+                  </p>
+                  <h2 class="quick-view__h2">$250.00</h2>
+                  <p class="quick-view__p bold">stock: 100 left</p>
+                  <div class="quick-view__des">
+                    <h5 class="quick-view__h5">Color:</h5>
+                    <select name="" id="">
+                      <option value="">Red</option>
+                      <option value="">Blue</option>
+                      <option value="">Black</option>
+                    </select>
+                  </div>
+                  <div class="quick-view__des">
+                    <h5 class="quick-view__h5">Size:</h5>
+                    <label for="small">Small </label>
+                    <input id="small" type="radio" name="size" value="small" />
+                    <label for="medium">Medium </label
+                    ><input
+                      id="medium"
+                      type="radio"
+                      name="size"
+                      value="medium"
+                    />
+                    <label for="large">Large </label
+                    ><input id="large" type="radio" name="size" value="large" />
+                  </div>
+                  <div class="quick-view__cart">
+                    <div class="quick-view__increment">
+                      <div>-</div>
+                      <div>1</div>
+                      <div>+</div>
+                    </div>
+                    <button class="quick-view__cart-btn">Add to Cart</button>
+                  </div>
+                  <div class="quick-view__category">
+                    <h5 class="quick-view__h5">Category</h5>
+                    <a href="category.html">Men</a>
+                  </div>
+                  <div class="quick-view__meta-tags">
+                    <p class="quick-view__meta-tag">premium-shirt</p>
+                    <p class="quick-view__meta-tag">t-shirt</p>
+                    <p class="quick-view__meta-tag">new-t-shirt</p>
+                  </div>
+                  <a class="btn-generic-alt" href="product.html">View More</a>
+                  <div class="quick-view__contact">
+                    <p>Contact Us for Order:</p>
+                    <span>+2348124406444</span>
+                  </div>
+                </div>
+                <button
+                  class="close-btn-rounded quick-view__close"
+                  data-close-button
+                >
+                  &times;
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="section7">
+        <article class="margin-container">
+          <img src="pictures/illustrations/illustration_checkout.png" alt="" />
+          <div class="section7__text">
+            <h4 class="heading-fs">Get your needs from our store</h4>
+            <p class="p-fs">
+              Get all your essential needs fulfilled seamlessly and conveniently
+              from our store, where we cater to your every requirement with a
+              wide range of products and exceptional service, ensuring a
+              hassle-free shopping experience every time.
+            </p>
+            <div class="section7__stickers">
+              <img src="pictures/stickers/app-store_cyyc0f.svg" alt="" />
+              <img src="pictures/stickers/play-store_cavwua.svg" alt="" />
+            </div>
+          </div>
+          <img src="pictures/illustrations/illustration_checkout2.png" alt="" />
+        </article>
+      </section>
+      <section class="section8">
+        <article class="margin-container">
+          <div>
+            <i class="section8__icon" data-lucide="truck"></i>
+            <p>Free Shipping for Over $500.00</p>
+          </div>
+          <span>|</span>
+          <div>
+            <i class="section8__icon" data-lucide="phone-call"></i>
+            <p>Support 24/7 At Anytime</p>
+          </div>
+          <span>|</span>
+          <div>
+            <i class="section8__icon" data-lucide="credit-card"></i>
+            <p>100% Secure Payment</p>
+          </div>
+          <span>|</span>
+          <div>
+            <i class="section8__icon" data-lucide="gift"></i>
+            <p>Latest Offer up to 20% Off</p>
+          </div>
+        </article>
       </section>
     </main>
-    <footer class="container-p1">
-      <div class="col">
-        <img class="logo" src="pictures/logo.png" alt="cesmi" />
-        <h4>Contact</h4>
-        <p>
-          <strong>Address:</strong> 562 wellington Road, Street 32, San
-          Francisco
-        </p>
-        <p><strong>Phone:</strong> +2348012345678</p>
-        <p><strong>Hours:</strong> 10:00 - 18:00 Mon - Sat</p>
-        <div class="follow">
-          <h4>Follow us</h4>
-          <div class="icons">
-            <i class="uil uil-facebook-f"></i>
-            <i class="uil uil-twitter"></i>
-            <i class="uil uil-instagram"></i>
-            <i class="uil uil-linkedin"></i>
-            <i class="uil uil-youtube"></i>
+    <section class="cart-comp">
+      <div data-modal-target="#cart-modal" class="cart-float">
+        <i class="cart-float__icon" data-lucide="shopping-cart"></i>
+        <p class="cart-float__p">3 items</p>
+        <h3 class="cart-float__h3">$650.00</h3>
+      </div>
+      <div id="cart-modal" class="cart-modal modal">
+        <div class="cart__head">
+          <h4 class="cart__h4">Shopping Cart</h4>
+          <button data-close-button class="close-btn-rounded">&times;</button>
+        </div>
+        <div class="cart__body">
+          <div class="cart-model-cont">
+            <div class="cart-model">
+              <img
+                class="cart-model__img"
+                src="pictures/products/f2.jpg"
+                alt=""
+              />
+              <div class="cart-model__details">
+                <h4 class="cart-model__h4">premuim T-shirt black</h4>
+                <h6 class="cart-model__h6">price: $150.00</h6>
+                <div class="cart-model__bottom">
+                  <h3 class="cart-model__h3">$450.00</h3>
+                  <div class="cart-model__quantity">
+                    <div>-</div>
+                    <div class="">3</div>
+                    <div class="">+</div>
+                  </div>
+                  <div>
+                    <i
+                      class="cart-model__delete-icon"
+                      data-lucide="trash-2"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-model">
+              <img
+                class="cart-model__img"
+                src="pictures/products/f2.jpg"
+                alt=""
+              />
+              <div class="cart-model__details">
+                <h4 class="cart-model__h4">premuim T-shirt black</h4>
+                <h6 class="cart-model__h6">price: $150.00</h6>
+                <div class="cart-model__bottom">
+                  <h3 class="cart-model__h3">$450.00</h3>
+                  <div class="cart-model__quantity">
+                    <div>-</div>
+                    <div class="">3</div>
+                    <div class="">+</div>
+                  </div>
+                  <div>
+                    <i
+                      class="cart-model__delete-icon"
+                      data-lucide="trash-2"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-model">
+              <img
+                class="cart-model__img"
+                src="pictures/products/f2.jpg"
+                alt=""
+              />
+              <div class="cart-model__details">
+                <h4 class="cart-model__h4">premuim T-shirt black</h4>
+                <h6 class="cart-model__h6">price: $150.00</h6>
+                <div class="cart-model__bottom">
+                  <h3 class="cart-model__h3">$450.00</h3>
+                  <div class="cart-model__quantity">
+                    <div>-</div>
+                    <div class="">3</div>
+                    <div class="">+</div>
+                  </div>
+                  <div>
+                    <i
+                      class="cart-model__delete-icon"
+                      data-lucide="trash-2"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-model">
+              <img
+                class="cart-model__img"
+                src="pictures/products/f2.jpg"
+                alt=""
+              />
+              <div class="cart-model__details">
+                <h4 class="cart-model__h4">premuim T-shirt black</h4>
+                <h6 class="cart-model__h6">price: $150.00</h6>
+                <div class="cart-model__bottom">
+                  <h3 class="cart-model__h3">$450.00</h3>
+                  <div class="cart-model__quantity">
+                    <div>-</div>
+                    <div class="">3</div>
+                    <div class="">+</div>
+                  </div>
+                  <div>
+                    <i
+                      class="cart-model__delete-icon"
+                      data-lucide="trash-2"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <h4>About</h4>
-        <a href="#">About us</a>
-        <a href="#">Delivery Information</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Contact Us</a>
-      </div>
-      <div class="col">
-        <h4>My Account</h4>
-        <a href="#">Sign In</a>
-        <a href="#">View Cart</a>
-        <a href="#">Saved</a>
-        <a href="#">Track My order</a>
-        <a href="#">Help</a>
-      </div>
-      <div class="col install">
-        <h4>Install App</h4>
-        <p>From App Store or Google Play</p>
-        <div class="row">
-          <img src="pictures/pay/app.jpg" alt="app" />
-          <img src="pictures/pay/play.jpg" alt="play" />
+        <div class="cart__bottom">
+          <h5 class="cart__h5">Proceed to Checkout</h5>
+          <h2 class="cart__h2">$450.00</h2>
         </div>
-        <p>Secured Payment Gateway</p>
-        <img src="pictures/pay/pay.png" alt="pay" />
       </div>
-      <div class="copyright">
-        <p>&copy; 2021, CESMI - HTMl CSS Ecommerce Template</p>
+    </section>
+    <section id="login-modal" class="login-modal modal large-pop-up">
+      <div class="login-view login-signup active">
+        <h1 class="login__h1">Login</h1>
+        <p class="login__p">Login with your email and password</p>
+        <label for="email">
+          <span class="login__span">Email</span>
+          <div class="input-cont">
+            <input id="email" type="email" placeholder="Email" />
+            <i class="input__icon" data-lucide="mail"></i>
+          </div>
+        </label>
+        <label for="password">
+          <span class="login__span">Password</span>
+          <div class="input-cont">
+            <input id="password" type="password" placeholder="Password" />
+            <i class="input__icon" data-lucide="lock"></i>
+            <i class="pass__icon" data-lucide="eye"></i>
+          </div>
+        </label>
+        <p class="forgot-pass">Forgot password?</p>
+        <button class="btn-generic login__btn">Login</button>
+
+        <h2 class="login__h2">OR</h2>
+        <div class="login-methods">
+          <a class="login-method">
+            <img src="pictures/icons/icon-facebook.png" alt="" /> Log in with
+            Facebook
+          </a>
+          <a class="login-method">
+            <img src="pictures/icons/icon-google.png" alt="" />Sign in with
+            Google
+          </a>
+        </div>
+        <p class="login-switch">
+          Don't have an account yet?
+          <span class="login-register-btn">Register</span>
+        </p>
       </div>
+      <div class="sign-up-view login-signup">
+        <h1 class="login__h1">Sign Up</h1>
+        <p class="login__p">Create an account with email and password</p>
+        <label for="name">
+          <span class="login__span">Name</span>
+          <div class="input-cont">
+            <input id="name" type="text" placeholder="Full Name" />
+            <i class="input__icon" data-lucide="user"></i>
+          </div>
+        </label>
+        <label for="email">
+          <span class="login__span">Email</span>
+          <div class="input-cont">
+            <input id="email" type="email" placeholder="Email" />
+            <i class="input__icon" data-lucide="mail"></i>
+          </div>
+        </label>
+        <label for="password">
+          <span class="login__span">Password</span>
+          <div class="input-cont">
+            <input id="password" type="password" placeholder="Password" />
+            <i class="input__icon" data-lucide="lock"></i>
+            <i class="pass__icon" data-lucide="eye"></i>
+          </div>
+        </label>
+        <button class="btn-generic login__btn">Sign Up</button>
+
+        <h2 class="login__h2">OR</h2>
+        <div class="login-methods">
+          <a class="login-method">
+            <img src="pictures/icons/icon-facebook.png" alt="" /> Log in with
+            Facebook
+          </a>
+          <a class="login-method">
+            <img src="pictures/icons/icon-google.png" alt="" />Sign in with
+            Google
+          </a>
+        </div>
+        <p class="login-switch">
+          Already have an account? <span class="login-register-btn">Login</span>
+        </p>
+      </div>
+      <button class="close-btn-rounded quick-view__close" data-close-button>
+        &times;
+      </button>
+    </section>
+    <footer class="footer">
+      <section class="bottom-links margin-container">
+        <article>
+          <h4 class="bottom-links__h4">About</h4>
+          <ul>
+            <li>
+              <a class="bottom-links__a" href="maintenance.html">About Us</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Delivery</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a"
+                >Privacy & Policy</a
+              >
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Contact Us</a>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h4 class="bottom-links__h4">News</h4>
+          <ul>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Phones</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Beauty</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Health</a>
+            </li>
+            <li><a href="maintenance.html" class="bottom-links__a">Food</a></li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Technology</a>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h4 class="bottom-links__h4">My Account</h4>
+          <ul>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Sign in</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">View Cart</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Wishlist</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a"
+                >Track My Order</a
+              >
+            </li>
+            <li><a href="maintenance.html" class="bottom-links__a">Help</a></li>
+          </ul>
+        </article>
+        <article>
+          <img
+            class="bottom-links__logo"
+            src="pictures/skico logo pri-2.png"
+            alt=""
+          />
+          <ul>
+            <li>
+              <p class="bottom-links__a">
+                987 Andre Plain Suite High Street 838, Lake Hestertown, USA
+              </p>
+            </li>
+            <li><p class="bottom-links__a">Tel : 02.356.1666</p></li>
+            <li><p class="bottom-links__a">Email : ccruidk@test.com</p></li>
+          </ul>
+        </article>
+      </section>
+      <section class="bottom-section margin-container">
+        <article class="article1">
+          <div class="follow-us">
+            <p class="bottom__p">Follow Us</p>
+            <div>
+              <a href="https://facebook.com" target="_blank"
+                ><img src="pictures/icons/icon-facebook.png" alt=""
+              /></a>
+              <a href="https://x.com/ual_farouq" target="_blank"
+                ><img src="pictures/icons/icons-x.png" alt=""
+              /></a>
+              <a href="https://pinterest.com" target="_blank"
+                ><img src="pictures/icons/icon-pinterest.png" alt=""
+              /></a>
+              <a href="https://linkedin.com/in/umar-sarki" target="_blank"
+                ><img src="pictures/icons/icon-linkedin.png" alt=""
+              /></a>
+              <a href="https://whatsapp.com" target="_blank"
+                ><img src="pictures/icons/icons-whatsapp.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="call-us-today">
+            <p class="bottom__p">Call Us Today!</p>
+            <h2>+2348124406444</h2>
+          </div>
+          <img
+            class="payment-logo"
+            src="pictures/stickers/payment-logo_qhslgz.webp"
+            alt=""
+          />
+        </article>
+        <article class="article2">
+          <p>Copyright 2024 @ <span>Sarki</span>, All rights reserved.</p>
+        </article>
+      </section>
+      <section class="bottom-bar">
+        <ul class="bottom-bar__ul margin-container">
+          <li>
+            <a data-modal-target="#aside"
+              ><i class="bottom-bar__icon" data-lucide="align-left"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/"><i class="bottom-bar__icon" data-lucide="home"></i></a>
+          </li>
+          <li>
+            <a data-modal-target="#cart-modal"
+              ><i class="bottom-bar__icon" data-lucide="shopping-cart"></i
+            ></a>
+          </li>
+          <li>
+            <a data-modal-target="#login-modal"
+              ><i class="bottom-bar__icon" data-lucide="user"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
     </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
