@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKICO</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="top-details margin-container">
+      <div class="flex-align-center">
+        <i class="top-details__icon" data-lucide="phone-call"></i>
+        <span class="top-details__available"
+          >We are available 24/7, Need help?</span
+        ><span class="top-details__contact-phone"> +2348124406444</span>
+      </div>
+      <div class="top-details__pages flex-align-center">
+        <a href="maintenance.html">About Us</a> |
+        <a href="maintenance.html">Contact Us</a> |
+        <a href="maintenance.html">My Account</a> |
+        <a href="maintenance.html" class="flex-align-center">
+          <i class="top-details__icon" data-lucide="user"></i> Login</a
+        >
+      </div>
+    </div>
+    <header class="header">
+      <nav class="header__nav margin-container">
+        <a href="/">
+          <img src="/pictures/logo.png" alt="" class="header__logo"
+        /></a>
+        <div class="header__search-bar">
+          <input type="text" placeholder="Search products here" />
+          <i class="search-bar__logo" data-lucide="search"></i>
+        </div>
+        <ul class="header__ul">
+          <li data-count="2" class="header__icon-li">
+            <a href="maintenance.html">
+              <i class="header__icon" data-lucide="bell"></i
+            ></a>
+          </li>
+          <li
+            data-modal-target="#cart-modal"
+            data-count="10"
+            class="header__icon-li"
+          >
+            <a> <i class="header__icon" data-lucide="shopping-cart"></i></a>
+          </li>
+          <li data-modal-target="#login-modal">
+            <a> <i class="header__icon" data-lucide="user"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <section class="bottom-header">
+        <section class="bottom-header__content margin-container">
+          <ul class="bottom-header__ul-first">
+            <li class="bottom-header__li">
+              <span
+                data-modal-target="#categories-modal"
+                class="flex-align-center bottom-header__btn"
+                >Categories
+                <i class="bottom-header__icon" data-lucide="chevron-down"></i>
+              </span>
+              <div id="categories-modal" class="modal categories-modal">
+                <ul>
+                  <li>
+                    <a href="category.html">
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p></a
+                    >
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="list__icon" src="favicon.ico" alt="" />
+                      <p>Phones</p>
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="bottom-header__btn" href="about.html">About</a>
+            </li>
+            <li>
+              <a class="bottom-header__btn" href="contact.html">Contact</a>
+            </li>
+            <li class="bottom-header__li">
+              <span
+                data-modal-target="#pages-modal"
+                class="flex-align-center bottom-header__btn"
+                >Pages
+                <i class="bottom-header__icon" data-lucide="chevron-down"></i>
+              </span>
+              <div id="pages-modal" class="modal pages-modal">
+                <ul>
+                  <li>
+                    <a href="offers.html">
+                      <i class="bottom-header__icon" data-lucide="gift"></i>
+                      <p>Offers</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="checkout.html">
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="shopping-bag"
+                      ></i>
+                      <p>Checkout</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="faq.html">
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="message-circle-question"
+                      ></i>
+                      <p>FAQ</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="about.html">
+                      <i class="bottom-header__icon" data-lucide="users"></i>
+                      <p>About Us</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html">
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="phone-outgoing"
+                      ></i>
+                      <p>Contact Us</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="privacy_policy.html">
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="phone-outgoing"
+                      ></i>
+                      <p>Privacy Policy</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="terms_and_conditions.html">
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="phone-outgoing"
+                      ></i>
+                      <p>Terms & Conditions</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="404.html">
+                      <i
+                        class="bottom-header__icon"
+                        data-lucide="circle-alert"
+                      ></i>
+                      <p>404</p></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="bottom-header__btn" href="admin/">Go to Admin</a></li>
+          </ul>
+          <ul class="bottom-header__ul-last">
+            <li>ENGLISH</li>
+            <li>Privacy Policy</li>
+            <li>Terms and Conditions</li>
+          </ul>
+        </section>
+      </section>
+      <div id="overlay"></div>
+    </header>
+    <aside id="aside" class="aside modal">
+      <section class="aside__head">
+        <img
+          class="aside__logo"
+          src="pictures/skico logo background.png"
+          alt=""
+        />
+        <button data-close-button class="close-btn-rounded">&times;</button>
+      </section>
+      <section class="aside__section">
+        <h3 class="aside__h3">Categories</h3>
+        <ul class="aside__ul">
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Phones</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Phones</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Accessories</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Ketchen</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Household</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+          <li class="aside__li">
+            <img class="list__icon" src="favicon.ico" alt="" />
+            <p>Gatgets</p>
+            <i class="bottom-header__icon" data-lucide="chevron-right"></i>
+          </li>
+        </ul>
+      </section>
+      <section class="aside__section">
+        <h3 class="aside__h3">Admin</h3>
+        <ul class="aside__ul">
+          <li class="aside__li">
+            <a href="admin/">
+              <img class="list__icon" src="favicon.ico" alt="" />
+              <p>Go to Admin</p></a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="aside__section">
+        <h3 class="aside__h3">Pages</h3>
+        <ul class="aside__ul">
+          <li class="aside__li">
+            <i class="bottom-header__icon" data-lucide="gift"></i>
+            <p>Offers</p>
+          </li>
+          <li class="aside__li">
+            <i class="bottom-header__icon" data-lucide="shopping-bag"></i>
+            <p>Checkout</p>
+          </li>
+          <li class="aside__li">
+            <i
+              class="bottom-header__icon"
+              data-lucide="message-circle-question"
+            ></i>
+            <p>FAQ</p>
+          </li>
+          <li class="aside__li">
+            <i class="bottom-header__icon" data-lucide="users"></i>
+            <p>About</p>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <main class="main">
+      <section class="head-banner">
+        <h1 class="head-banner__h1">Mega Offers</h1>
+      </section>
+      <section class="margin-container pages-top">
+        <div class="offers__cont">
+          <div class="coupons__coupon">
+            <img src="pictures/features/f1.png" alt="" />
+            <div class="coupons__details">
+              <p class="coupon__count">
+                <span class="coupon__time-units-2">2</span> :
+                <span class="coupon__time-units-2">9</span> :
+                <span class="coupon__time-units-2">12</span> :
+                <span class="coupon__time-units-2">13</span>
+              </p>
+              <h4 class="coupons__h4">Summer Gift Voucher</h4>
+              <p class="coupon__title"><span>20%</span> <span>Off</span></p>
+            </div>
+            <div class="coupon__code">
+              <h4 class="coupons__h4">
+                Coupon <span class="text-pri-color">Active</span>
+              </h4>
+              <h3 class="coupons__h3">VD</h3>
+              <h5 class="coupons__h5">
+                * This coupon apply when shopping more then $100.02
+              </h5>
+            </div>
+          </div>
+          <div class="coupons__coupon">
+            <img src="pictures/features/f2.png" alt="" />
+            <div class="coupons__details">
+              <p class="coupon__count">
+                <span class="coupon__time-units-2">2</span> :
+                <span class="coupon__time-units-2">9</span> :
+                <span class="coupon__time-units-2">12</span> :
+                <span class="coupon__time-units-2">13</span>
+              </p>
+              <h4 class="coupons__h4">Autumn Gift Voucher</h4>
+              <p class="coupon__title"><span>20%</span> <span>Off</span></p>
+            </div>
+            <div class="coupon__code">
+              <h4 class="coupons__h4">
+                Coupon <span class="text-pri-color">Active</span>
+              </h4>
+              <h3 class="coupons__h3">VD</h3>
+              <h5 class="coupons__h5">
+                * This coupon apply when shopping more then $100.02
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section7">
+        <article class="margin-container">
+          <img src="pictures/illustrations/illustration_checkout.png" alt="" />
+          <div class="section7__text">
+            <h4 class="heading-fs">Get your needs from our store</h4>
+            <p class="p-fs">
+              Get all your essential needs fulfilled seamlessly and conveniently
+              from our store, where we cater to your every requirement with a
+              wide range of products and exceptional service, ensuring a
+              hassle-free shopping experience every time.
+            </p>
+            <div class="section7__stickers">
+              <img src="pictures/stickers/app-store_cyyc0f.svg" alt="" />
+              <img src="pictures/stickers/play-store_cavwua.svg" alt="" />
+            </div>
+          </div>
+          <img src="pictures/illustrations/illustration_checkout2.png" alt="" />
+        </article>
+      </section>
+      <section class="section8">
+        <article class="margin-container">
+          <div>
+            <i class="section8__icon" data-lucide="truck"></i>
+            <p>Free Shipping for Over $500.00</p>
+          </div>
+          <span>|</span>
+          <div>
+            <i class="section8__icon" data-lucide="phone-call"></i>
+            <p>Support 24/7 At Anytime</p>
+          </div>
+          <span>|</span>
+          <div>
+            <i class="section8__icon" data-lucide="credit-card"></i>
+            <p>100% Secure Payment</p>
+          </div>
+          <span>|</span>
+          <div>
+            <i class="section8__icon" data-lucide="gift"></i>
+            <p>Latest Offer up to 20% Off</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <section class="cart-comp">
+      <div id="cart-modal" class="cart-modal modal">
+        <div class="cart__head">
+          <h4 class="cart__h4">Shopping Cart</h4>
+          <button data-close-button class="close-btn-rounded">&times;</button>
+        </div>
+        <div class="cart__body">
+          <div class="cart-model-cont">
+            <div class="cart-model">
+              <img
+                class="cart-model__img"
+                src="pictures/products/f2.jpg"
+                alt=""
+              />
+              <div class="cart-model__details">
+                <h4 class="cart-model__h4">premuim T-shirt black</h4>
+                <h6 class="cart-model__h6">price: $150.00</h6>
+                <div class="cart-model__bottom">
+                  <h3 class="cart-model__h3">$450.00</h3>
+                  <div class="cart-model__quantity">
+                    <div>-</div>
+                    <div class="">3</div>
+                    <div class="">+</div>
+                  </div>
+                  <div>
+                    <i
+                      class="cart-model__delete-icon"
+                      data-lucide="trash-2"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-model">
+              <img
+                class="cart-model__img"
+                src="pictures/products/f2.jpg"
+                alt=""
+              />
+              <div class="cart-model__details">
+                <h4 class="cart-model__h4">premuim T-shirt black</h4>
+                <h6 class="cart-model__h6">price: $150.00</h6>
+                <div class="cart-model__bottom">
+                  <h3 class="cart-model__h3">$450.00</h3>
+                  <div class="cart-model__quantity">
+                    <div>-</div>
+                    <div class="">3</div>
+                    <div class="">+</div>
+                  </div>
+                  <div>
+                    <i
+                      class="cart-model__delete-icon"
+                      data-lucide="trash-2"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-model">
+              <img
+                class="cart-model__img"
+                src="pictures/products/f2.jpg"
+                alt=""
+              />
+              <div class="cart-model__details">
+                <h4 class="cart-model__h4">premuim T-shirt black</h4>
+                <h6 class="cart-model__h6">price: $150.00</h6>
+                <div class="cart-model__bottom">
+                  <h3 class="cart-model__h3">$450.00</h3>
+                  <div class="cart-model__quantity">
+                    <div>-</div>
+                    <div class="">3</div>
+                    <div class="">+</div>
+                  </div>
+                  <div>
+                    <i
+                      class="cart-model__delete-icon"
+                      data-lucide="trash-2"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-model">
+              <img
+                class="cart-model__img"
+                src="pictures/products/f2.jpg"
+                alt=""
+              />
+              <div class="cart-model__details">
+                <h4 class="cart-model__h4">premuim T-shirt black</h4>
+                <h6 class="cart-model__h6">price: $150.00</h6>
+                <div class="cart-model__bottom">
+                  <h3 class="cart-model__h3">$450.00</h3>
+                  <div class="cart-model__quantity">
+                    <div>-</div>
+                    <div class="">3</div>
+                    <div class="">+</div>
+                  </div>
+                  <div>
+                    <i
+                      class="cart-model__delete-icon"
+                      data-lucide="trash-2"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart__bottom">
+          <h5 class="cart__h5">Proceed to Checkout</h5>
+          <h2 class="cart__h2">$450.00</h2>
+        </div>
+      </div>
+    </section>
+    <section id="login-modal" class="login-modal modal large-pop-up">
+      <div class="login-view login-signup active">
+        <h1 class="login__h1">Login</h1>
+        <p class="login__p">Login with your email and password</p>
+        <label for="email">
+          <span class="login__span">Email</span>
+          <div class="input-cont">
+            <input id="email" type="email" placeholder="Email" />
+            <i class="input__icon" data-lucide="mail"></i>
+          </div>
+        </label>
+        <label for="password">
+          <span class="login__span">Password</span>
+          <div class="input-cont">
+            <input id="password" type="password" placeholder="Password" />
+            <i class="input__icon" data-lucide="lock"></i>
+            <i class="pass__icon" data-lucide="eye"></i>
+          </div>
+        </label>
+        <p class="forgot-pass">Forgot password?</p>
+        <button class="btn-generic login__btn">Login</button>
+
+        <h2 class="login__h2">OR</h2>
+        <div class="login-methods">
+          <a class="login-method">
+            <img src="pictures/icons/icon-facebook.png" alt="" /> Log in with
+            Facebook
+          </a>
+          <a class="login-method">
+            <img src="pictures/icons/icon-google.png" alt="" />Sign in with
+            Google
+          </a>
+        </div>
+        <p class="login-switch">
+          Don't have an account yet?
+          <span class="login-register-btn">Register</span>
+        </p>
+      </div>
+      <div class="sign-up-view login-signup">
+        <h1 class="login__h1">Sign Up</h1>
+        <p class="login__p">Create an account with email and password</p>
+        <label for="name">
+          <span class="login__span">Name</span>
+          <div class="input-cont">
+            <input id="name" type="text" placeholder="Full Name" />
+            <i class="input__icon" data-lucide="user"></i>
+          </div>
+        </label>
+        <label for="email">
+          <span class="login__span">Email</span>
+          <div class="input-cont">
+            <input id="email" type="email" placeholder="Email" />
+            <i class="input__icon" data-lucide="mail"></i>
+          </div>
+        </label>
+        <label for="password">
+          <span class="login__span">Password</span>
+          <div class="input-cont">
+            <input id="password" type="password" placeholder="Password" />
+            <i class="input__icon" data-lucide="lock"></i>
+            <i class="pass__icon" data-lucide="eye"></i>
+          </div>
+        </label>
+        <button class="btn-generic login__btn">Sign Up</button>
+
+        <h2 class="login__h2">OR</h2>
+        <div class="login-methods">
+          <a class="login-method">
+            <img src="pictures/icons/icon-facebook.png" alt="" /> Log in with
+            Facebook
+          </a>
+          <a class="login-method">
+            <img src="pictures/icons/icon-google.png" alt="" />Sign in with
+            Google
+          </a>
+        </div>
+        <p class="login-switch">
+          Already have an account? <span class="login-register-btn">Login</span>
+        </p>
+      </div>
+      <button class="close-btn-rounded quick-view__close" data-close-button>
+        &times;
+      </button>
+    </section>
+    <footer class="footer">
+      <section class="bottom-links margin-container">
+        <article>
+          <h4 class="bottom-links__h4">About</h4>
+          <ul>
+            <li>
+              <a class="bottom-links__a" href="maintenance.html">About Us</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Delivery</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a"
+                >Privacy & Policy</a
+              >
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Contact Us</a>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h4 class="bottom-links__h4">News</h4>
+          <ul>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Phones</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Beauty</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Health</a>
+            </li>
+            <li><a href="maintenance.html" class="bottom-links__a">Food</a></li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Technology</a>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h4 class="bottom-links__h4">My Account</h4>
+          <ul>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Sign in</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">View Cart</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a">Wishlist</a>
+            </li>
+            <li>
+              <a href="maintenance.html" class="bottom-links__a"
+                >Track My Order</a
+              >
+            </li>
+            <li><a href="maintenance.html" class="bottom-links__a">Help</a></li>
+          </ul>
+        </article>
+        <article>
+          <img
+            class="bottom-links__logo"
+            src="pictures/skico logo pri-2.png"
+            alt=""
+          />
+          <ul>
+            <li>
+              <p class="bottom-links__a">
+                987 Andre Plain Suite High Street 838, Lake Hestertown, USA
+              </p>
+            </li>
+            <li><p class="bottom-links__a">Tel : 02.356.1666</p></li>
+            <li><p class="bottom-links__a">Email : ccruidk@test.com</p></li>
+          </ul>
+        </article>
+      </section>
+      <section class="bottom-section margin-container">
+        <article class="article1">
+          <div class="follow-us">
+            <p class="bottom__p">Follow Us</p>
+            <div>
+              <a href="https://facebook.com" target="_blank"
+                ><img src="pictures/icons/icon-facebook.png" alt=""
+              /></a>
+              <a href="https://x.com/ual_farouq" target="_blank"
+                ><img src="pictures/icons/icons-x.png" alt=""
+              /></a>
+              <a href="https://pinterest.com" target="_blank"
+                ><img src="pictures/icons/icon-pinterest.png" alt=""
+              /></a>
+              <a href="https://linkedin.com/in/umar-sarki" target="_blank"
+                ><img src="pictures/icons/icon-linkedin.png" alt=""
+              /></a>
+              <a href="https://whatsapp.com" target="_blank"
+                ><img src="pictures/icons/icons-whatsapp.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="call-us-today">
+            <p class="bottom__p">Call Us Today!</p>
+            <h2>+2348124406444</h2>
+          </div>
+          <img
+            class="payment-logo"
+            src="pictures/stickers/payment-logo_qhslgz.webp"
+            alt=""
+          />
+        </article>
+        <article class="article2">
+          <p>Copyright 2024 @ <span>Sarki</span>, All rights reserved.</p>
+        </article>
+      </section>
+      <section class="bottom-bar">
+        <ul class="bottom-bar__ul margin-container">
+          <li>
+            <a data-modal-target="#aside"
+              ><i class="bottom-bar__icon" data-lucide="align-left"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/"><i class="bottom-bar__icon" data-lucide="home"></i></a>
+          </li>
+          <li>
+            <a data-modal-target="#cart-modal"
+              ><i class="bottom-bar__icon" data-lucide="shopping-cart"></i
+            ></a>
+          </li>
+          <li>
+            <a data-modal-target="#login-modal"
+              ><i class="bottom-bar__icon" data-lucide="user"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
