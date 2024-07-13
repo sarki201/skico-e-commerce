@@ -4,6 +4,8 @@ const openSectionButtons = document.querySelectorAll("[data-section-target]");
 const overlay = document.getElementById("overlay");
 const loginRegisterBtn = document.querySelectorAll(".login-register-btn");
 const loginRegisterView = document.querySelectorAll(".login-signup");
+const faqQuestions = document.querySelectorAll('.faq__question');
+const faqAnswers = document.querySelectorAll('.faq__answer');
 
 var counter = 1;
 setInterval(function () {
@@ -69,6 +71,18 @@ openSectionButtons.forEach((button) => {
   })
 });
 }
+
+if(faqQuestions) {
+  for (let i = 0; i <faqQuestions.length; i++) {
+    if(faqQuestions[i]) {
+        faqQuestions[i].addEventListener('click', () =>{
+            faqAnswers[i].classList.toggle('active');
+        })
+    }
+  }
+}
+
+
 // const openSection = (section) => {
 //   if (section == null) return;
 //   section.classList.add("active");
