@@ -536,9 +536,10 @@ body:has(.aside.active) {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    width: 100%;
 }
 
-.aside__li>:nth-child(3) {
+.aside__li>a>:nth-child(3) {
     margin-left: auto;
 }
 

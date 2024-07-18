@@ -50,34 +50,34 @@ const closeModal = (modal) => {
 
 
 loginRegisterBtn.forEach(btn => {
-  btn.addEventListener('click', ()=>{
+  btn.addEventListener('click', () => {
     loginRegisterView.forEach(view => {
       view.classList.toggle("active");
     })
   })
 })
 
-if(openSectionButtons) {
-openSectionButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const section = document.querySelector(button.dataset.sectionTarget);
-    if (section) {
-      const sections = document.querySelectorAll(".profile-section.active");
-      sections.forEach(sec =>{
-        sec.classList.remove('active')
-      })
-      section.classList.add('active')
-    }
-  })
-});
+if (openSectionButtons) {
+  openSectionButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const section = document.querySelector(button.dataset.sectionTarget);
+      if (section) {
+        const sections = document.querySelectorAll(".profile-section.active");
+        sections.forEach(sec => {
+          sec.classList.remove('active')
+        })
+        section.classList.add('active')
+      }
+    })
+  });
 }
 
-if(faqQuestions) {
-  for (let i = 0; i <faqQuestions.length; i++) {
-    if(faqQuestions[i]) {
-        faqQuestions[i].addEventListener('click', () =>{
-            faqAnswers[i].classList.toggle('active');
-        })
+if (faqQuestions) {
+  for (let i = 0; i < faqQuestions.length; i++) {
+    if (faqQuestions[i]) {
+      faqQuestions[i].addEventListener('click', () => {
+        faqAnswers[i].classList.toggle('active');
+      })
     }
   }
 }
